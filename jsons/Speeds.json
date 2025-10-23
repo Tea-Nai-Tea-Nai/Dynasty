@@ -1,0 +1,23 @@
+[
+{
+        "name": "Year",//年
+        "modifier": 1.0,//速度调整
+        "productionCostModifier": 1.0,//生产力成本修改器
+        "goldCostModifier": 1.0,//金币成本修改器
+        "scienceCostModifier": 1.0,//科技成本修改器
+        "cultureCostModifier": 1.0,//文化成本修改器
+        "faithCostModifier": 1.0,//信仰成本修改器
+        "improvementBuildLengthModifier": 1.0,//地块改良设施建造时间修改器
+        "barbarianModifier": 1.0,//蛮族生成修改器
+        "goldGiftModifier": 1.0,//赠送城邦黄金修改器
+        "cityStateTributeScalingInterval": 6.5,//城邦贡品修改器
+        "goldenAgeLengthModifier": 1.0,//黄金时代长度修改器
+        "religiousPressureAdjacentCity": 6,//相邻城市宗教压力
+        "peaceDealDuration": 10,//和平协议持续时间
+        "dealDuration": 15,//交易持续时间
+        "startYear": 0,//开始时间
+        "turns": [
+            {"yearsPerTurn": 1, "untilTurn":  10000},//"每回合年岁","持续回合"
+        ]
+    },
+]

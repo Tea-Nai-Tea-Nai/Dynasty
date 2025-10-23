@@ -1,0 +1,165 @@
+[
+	/*******************************胜利方式**************************/
+	{
+		"name": "Allow adult mode play", //允许游玩成人模式
+		"cost": 0, //建造费用
+		"uniques": [
+			"Unsellable",
+			"Automatically built in all cities where it is buildable",
+			"Limited to [1] per Civilization",
+			"Triggers a [Adult mode selection] event",
+			"Only available <when [Adult] Victory is enabled> <hidden from users>"
+		]
+	},
+    {
+		"name": "Adult", //成人
+		"cost": 0, //建造费用
+		"uniques": [
+			"Unbuildable",
+            "Will not be displayed in Civilopedia",
+			"Only available <when [Adult] Victory is enabled> <hidden from users>"
+		]
+	},
+
+
+    /*******************************建筑**************************/
+	{
+		"name": "Capitals", //首都
+		"cost": 30, //建造费用
+		"uniques": [
+			//"Unsellable",
+			"Indicates the capital city",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Capital-resource]",
+			//"Consumes [1] [Capital-resource1]",
+			"Unbuildable <when below [0] [Capital-resource]>",
+			"Remove [Capitals] [in this city] <when below [0] [Capital-resource]>",
+			"Can only be built <within [3] tiles of a [Capital]> <when above [0] [Capital-resource]>",
+			//"Automatically built in all cities where it is buildable <within [3] tiles of a [Capital]> <when above [0] [Capital-resource]> <for [AI player] Civilizations>",
+		]
+	},
+     {
+		"name": "Capitals-assist", //首都辅助
+		"cost": 0, //建造费用
+		"uniques": [
+			"Unsellable",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"Automatically built in all cities where it is buildable",
+			//"Instantly provides [1] [Capital-resource1]",
+			"Provides [+1] [Capital-resource1]",
+			"Limited to [1] per Civilization"
+		]
+	},
+	{
+		"name": "Assist", //辅助
+		"cost": 0, //建造费用
+		"uniques": [
+			//"Unbuildable",
+			"Unsellable",
+			"Cannot be purchased",
+			"Never destroyed when the city is captured",
+			"Automatically built in all cities where it is buildable",
+			"[+1 Culture] per [1] population [in this city]"
+		]
+	},
+	{
+		"name": "Granary-assist", //粮仓辅助
+		"cost": 0, //建造费用
+		"uniques": [
+			"Must have an owned [Farm] within [5] tiles",
+			//"Unbuildable",
+			"Unsellable",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"Automatically built in all cities where it is buildable <when above [0] [Grain]>",
+			"Remove [Granary-assist] [in this city] <when below [0] [Grain]>",
+			"[+1]% growth [in this city] <for every [10] [Grain1]>",
+			"[-1]% [Gold] [in this city] <for every [30] [Grain1]>",
+			"Consumes [1] [Grain1] <when above [0] [Grain1]> <for every [5] [Food]>",
+			"Consumes [1] [Grain1] <when above [0] [Grain1]> <for every [5] [Food]> <when at war>"
+		]
+	},
+    {
+		"name": "Granary-assist1", //粮仓辅助
+		"cost": 0, //建造费用
+		"uniques": [
+			//"Unbuildable",
+			"Must have an owned [Farm] within [5] tiles",
+			"Unsellable",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"Automatically built in all cities where it is buildable <when above [100] [Grain]>",
+			"Remove [Granary-assist1] [in this city]",
+			"[-1] population [in this city]",
+			"Consumes [100] [Grain1]"
+		]
+	},
+
+     {
+		"name": "Discovering wild Hakimi", //发现野生的哈基咪
+		"cost": 1, //建造费用
+		"uniques": [
+			"Only available <when [Adult] Victory is enabled> <hidden from users>",
+			"Only available <when above [0] [Adult-resourc]>",
+			"Unbuildable <for [AI player] Civilizations>",
+			"Free [Catgirl] appears",
+			"Can only be built <if [Discovering wild Hakimi] is not constructed by anybody>",
+			"Limited to [1] per Civilization"
+		]
+	},
+
+	{
+		"name": "Sacrifice", //献祭
+		"cost": 1, //建造费用
+		"uniques": [
+			"Must have an owned [Altar] within [5] tiles",
+			"Instantly consumes [1] [Recuperation]",
+			"Gain [+5] [Gold] <with [5]% chance>",
+            "Gain [+10] [Happiness] <with [5]% chance>",
+			"Gain [+3] [Science] <with [5]% chance>",
+            "Gain [+3] [Culture] <with [5]% chance>",
+			"Gain [+10] [Faith] <with [5]% chance>",
+			"Only available <after adopting [Worship]>",
+		]
+	},
+
+
+	{
+		"name": "Discharge", //退伍
+		"cost": 0, //建造费用
+		"uniques": [
+			"[+1] population [in this city]",
+			"Can only be built <when above [4] [Recuperation]>",
+			"Instantly consumes [5] [Recuperation]",
+			"Remove [Discharge] [in this city]",
+			"Automatically built in all cities where it is buildable <for [AI player] Civilizations>"
+		]
+	},
+	{
+		"name": "Decycle", //归队
+		"cost": 0, //建造费用
+		"uniques": [
+			"[-1] population [in this city]",
+			"Can only be built <when below [-4] [Recuperation]>",
+			"Instantly provides [5] [Recuperation]",
+			"Requires at least [2] population",
+			"Remove [Decycle] [in this city]",
+			"Automatically built in all cities where it is buildable <for [AI player] Civilizations>"
+		]
+	},
+	{
+		"name": "Conversion of population1", //人口转换1
+		"cost": 0, //建造费用
+		"uniques": [
+			"Instantly provides [1] [Recuperation]",
+			"Can only be built <when above [0] [Warrior-resource]>",
+			"Instantly consumes [1] [Warrior-resource]",
+			"Remove [Conversion of population1] [in this city]",
+			"Automatically built in all cities where it is buildable <after turn number [5]> <for [AI player] Civilizations>"
+		]
+	},
+	
+	
+]

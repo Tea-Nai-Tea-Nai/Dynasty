@@ -1,0 +1,71 @@
+[
+    {
+        "name": "discover cultural artifacts",//发现文物
+        "notification": "We have discovered cultural artifacts in the ruins! (+20 culture)",
+        "uniques": ["Gain [20] [Culture] <(modified by game speed)>"],
+        "color": "#cf8ff7"
+    },
+    {
+        "name": "squatters willing to work for you",//愿意为你工作的佃农
+        "notification": "A [Worker] has joined us!",
+        "uniques": ["Free [Worker] found in the ruins"],
+        //"excludedDifficulties": ["Prince", "King", "Emperor", "Immortal", "Deity"]
+    },
+    {
+        "name": "squatters wishing to settle under your rule",//希望在你的统治下定居的佃农
+        "notification": "A [Settler] has joined us!",
+        "uniques": ["Free [Settler] found in the ruins"],
+        //"excludedDifficulties": ["Warlord","Prince","King","Emperor","Immortal","Deity"]
+    },
+    {
+        "name": "your exploring unit receives training",//你的探险单位接受训练
+        "notification": "An ancient tribe trained us in their ways of combat!",
+        "uniques": ["[This Unit] gains [10] XP", "Only available <after turn number [10]>"]
+    },
+    {
+        "name": "survivors (adds population to a city)",//幸存者（增加一个城市的人口）
+        "notification": "We have found survivors in the ruins! Population added to [cityName].",
+        "uniques": ["[+1] population in a random city"], // This can't be easily added to cityFilter, as it is non-deterministic
+		"color": "#81c784"
+    },
+    {
+        "name": "a stash of gold",//一笔黄金
+        "notification": "", // trigger notification only
+        "uniques": ["Gain [50]-[100] [Gold] <(modified by game speed)>"],
+        "color": "#ffeb7f"
+    },
+    {
+        "name": "discover a lost technology",//发现失落的技术
+        "notification": "We have discovered the lost technology of [techName] in the ruins!",
+        "uniques": ["[1] free random researchable Tech(s) from the [Stone Age]"],
+		"color": "#7f7fff"
+    },
+    {
+        "name": "advanced weaponry for your explorer",//为你的探险者提供先进的武器
+        "notification": "Our unit finds advanced weaponry hidden in the ruins!",
+        "uniques": ["[This Unit] upgrades for free including special upgrades"]
+    },
+    {
+        "name": "reveal nearby Barbarian camps",//揭示附近的野蛮人营地
+        "notification": "You find evidence of Barbarian activity. Nearby Barbarian camps are revealed!",
+        "uniques": ["Reveal up to [All] [Barbarian encampment] within a [10] tile radius"]
+    },
+    {
+        "name": "find a crudely-drawn map",//找到一张粗略绘制的地图
+        "notification": "We have found a crudely-drawn map in the ruins!",
+        "uniques": ["From a randomly chosen tile [4] tiles away from the ruins, reveal tiles up to [4] tiles away with [80]% chance"]
+    },
+    {
+        "name": "discover holy symbols",//发现神圣的符号
+        "notification": "We have found holy symbols in the ruins, giving us a deeper understanding of religion! (+[faithAmount] Faith)",
+        "uniques": ["Only available <when religion is enabled>", "Gain enough Faith for a Pantheon", "Only available <before founding a Pantheon>", "Only available <after turn number [20]>"],
+		"color": "#CDDDF4"
+    },
+    {
+        "name": "an ancient prophecy",//一个古老的预言
+        "notification": "We have found an ancient prophecy in the ruins, greatly increasing our spiritual connection! (+[faithAmount] Faith)",
+        "uniques": ["Only available <when religion is enabled>", "Gain enough Faith for [33]% of a Great Prophet", "Unavailable <after generating a Great Prophet>",
+            "Only available <after founding a Pantheon>", "Only available <after turn number [20]>"],
+		"color": "#CDDDF4"
+    }
+]

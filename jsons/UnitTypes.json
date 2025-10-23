@@ -1,0 +1,226 @@
+[
+    {
+        "name": "Civilian",//平民
+        "movementType": "Land"
+        "uniques": [
+        ]
+    },
+    {
+        "name": "Civilian-Water",//水上平民
+        "movementType": "Water"
+        "uniques": [
+        ]
+    },
+     {
+        "name": "Sword",//近战
+        "movementType": "Land"
+        "uniques": [
+        ]
+    },
+    
+
+
+
+
+    /*{
+        "name": "Reaper",//收割者
+        "movementType": "Land"
+        "uniques": [
+        ]
+    },
+    {
+        "name": "Shield",//盾系
+        "movementType": "Land"
+        "uniques": [
+        ]
+    },
+    {
+        "name": "Ranged",//远战
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Gunpowder",//火器
+        "movementType": "Land"
+    },
+    {
+        "name": "Suppress",//压制
+        "movementType": "Land"
+    },
+    {
+        "name": "Mounted",//骑乘
+        "movementType": "Land"
+    },
+    {
+        "name": "Anticavalry",//反骑
+        "movementType": "Land"
+    },
+    {
+        "name": "Equestrian",//骑射
+        "movementType": "Land"
+    },
+    {
+        "name": "Armored",//装甲
+        "movementType": "Land"
+    },
+    {
+        "name": "Mech",//机甲
+        "movementType": "Land"
+    },
+    {
+        "name": "Siege",//攻城
+        "movementType": "Land"
+    },
+    {
+        "name": "Artillery",//火炮
+        "movementType": "Land"
+    },
+    {
+        "name": "Armed",//新式
+        "movementType": "Land"
+    },
+    {
+        "name": "Tanzania",//坦制
+        "movementType": "Land"
+    },
+    {
+        "name": "Tanzanias",//反坦
+        "movementType": "Land"
+    },
+    {
+        "name": "Navy",//海军
+        "movementType": "Water"
+    },
+    {
+        "name": "Submarine",//潜艇
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterAircraftCarrier",//航母
+        "movementType": "Water"
+    },
+    {
+        "name": "Shell",//炮弹
+        "movementType": "Air",
+    },
+    {
+        "name": "Bomber",//轰炸机
+        "movementType": "Air",
+        "uniques": []
+    },
+    {
+        "name": "Fighter",//战斗机
+        "movementType": "Air",
+        "uniques": []
+    },
+    {
+        "name": "Missile",//导弹
+        "movementType": "Air",
+        "uniques": [
+        ]
+    },
+    {
+        "name": "Hero",//英雄
+        "movementType": "Land"
+    },
+    
+    {
+        "name": "Swordmaster",//剑修
+        "movementType": "Land"
+    },
+    {
+        "name": "Cultivator",//蛊修
+        "movementType": "Land"
+    },
+    {
+        "name": "Toxic",//毒修
+        "movementType": "Land"
+    },
+    {
+        "name": "Buddhism",//佛修
+        "movementType": "Land"
+    },
+    {
+        "name": "Taoist",//道士
+        "movementType": "Land"
+    },
+    {
+        "name": "Confucian",//儒修
+        "movementType": "Land"
+    },
+    {
+        "name": "Body",//体修
+        "movementType": "Land"
+    },
+    {
+        "name": "Demonized",//魔修
+        "movementType": "Land"
+    },
+    {
+        "name": "Necromancy",//鬼修
+        "movementType": "Land"
+    },
+    {
+        "name": "Enchanter",//阵法师
+        "movementType": "Land"
+    },
+    {
+        "name": "Char",//符修
+        "movementType": "Land"
+    },
+    {
+        "name": "Beastmaster",//御兽师
+        "movementType": "Land"
+    },
+    {
+        "name": "Dragoon",//兽骑
+        "movementType": "Land"
+    },
+    {
+        "name": "Dragoons",//飞骑
+        "movementType": "Air"
+    },
+    {
+        "name": "Airship",//飞舟
+        "movementType": "Air"
+    },
+    {
+        "name": "Ferryman",//渡舟
+        "movementType": "Water"
+    },
+    {
+        "name": "Melee",
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged",
+        "movementType": "Land"
+    },
+    {
+        "name": "Armor",
+        "movementType": "Land"
+    },
+    {
+        "name": "WaterCivilian",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterMelee",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterRanged",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterSubmarine",
+        "movementType": "Water"
+    },
+    {
+        "name": "WaterAircraftCarrier",
+        "movementType": "Water"
+    },
+    {
+        "name": "AtomicBomber",
+        "movementType": "Air"
+    }*/
+]

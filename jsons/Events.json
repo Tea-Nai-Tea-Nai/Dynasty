@@ -1,0 +1,132 @@
+[//事件
+    /*{
+        "name": "快接受！",//名字
+        "text": "快接受！",//文本
+        "choices": [
+            {
+                "text": "快接受！",//文本模组
+                "uniques": []//能力
+            },
+        ]//选择
+    },*/
+    {
+        "name": "Adult mode selection",//成人模式选择
+        "text": "To play this mode, you must see the terms.",//文本
+        "choices": [
+            {
+                "text": "I agree to the above terms (for those over 18 years old)",//我同意以上条款（以满18岁）
+                "uniques": ["Instantly provides [1] [Adult-resourc] <hidden from users>"]//能力
+            },
+            {
+                "text": "I agree to the above terms (for those under 18 years old)",//我同意以上条款（以不满18岁）
+                "uniques": []//能力
+            },
+        ]//选择
+    },
+    {
+        "name": "Catgirl-favor-choice",//猫娘宠幸选择
+        "text": "Do you want to stick it?Meow?",//想要贴贴？喵？
+        "choices": [
+            {
+                "text": "stroke",//抚摸
+                "uniques": [
+                    "Gain [-1] [Gold]",
+                    "Gain [-1] [Happiness]",
+                    "Triggers a [stroke1] event"
+                ]//
+            },
+             {
+                "text": "breeding with her",//与她繁衍
+                "uniques": [
+                    "Gain [-1] [Gold]",
+                    "Gain [-1] [Happiness]",
+                    "Triggers a [breeding with her1] event"
+                    ]//
+            },
+            {
+                "text": "autumn Wave",//秋波
+                "uniques": [
+                    "Gain [-1] [Gold]",
+                    "Gain [-1] [Happiness]",
+                    "Triggers a [autumn Wave1] event"
+                ]//
+            },
+            {
+                "text": "hug",//抱抱
+                "uniques": [
+                    "Gain [-1] [Gold]",
+                    "Gain [-1] [Happiness]",
+                    "Triggers a [hug1] event"
+                ]//
+            },
+             {
+                "text": "snuggle",//贴贴
+                "uniques": [
+                    "Gain [-1] [Gold]",
+                    "Gain [-1] [Happiness]",
+                    "Triggers a [snuggle1] event"
+                ]//
+            },
+        ]//选择
+    },
+     {
+        "name": "stroke1",
+        "text": "Hmm",//嗯
+        "choices": [
+            {
+                "text": "stroke1",
+                "uniques": [
+                    "Comment [Ha~~~Hmm!]"//哈~~~嗯！
+                ]//
+            },
+        ]
+    },
+    {
+        "name": "breeding with her1",
+        "text": "Hmm",//嗯
+        "choices": [
+            {
+                "text": "breeding with her1",
+                "uniques": [
+                 "Comment [Doubtful? Papa pa pa - \n~~Ha~Ha~Ha~Ha pa pa pa pa pa pa - \n Hahaha ah ah ah ah ah ah ah ah ah ah ah~~\n p ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah~~~]"//疑？啪——啪——啪——\n~~哈~哈~哈-啪啪-啪啪-啪啪-\n哈哈哎哎-啪-啪-哎哎~~\n-啪-啪-啪啪噗~~啪啪~\n~哈哈哈~~~
+                ]//
+            },
+        ]
+    },
+    {
+        "name": "autumn Wave1",
+        "text": "Hmm",//嗯
+        "choices": [
+            {
+                "text": "autumn Wave1",
+                "uniques": [
+                     "Comment [Wow!]"//咂！
+                ]//
+            },
+        ]
+    },
+     {
+        "name": "hug1",
+        "text": "Hmm",//嗯
+        "choices": [
+            {
+                "text": "hug1",
+                "uniques": [
+                     "Comment [Uh huh~~~]"//嗯嗯~~~
+                ]//
+            },
+        ]
+    },
+    {
+        "name": "snuggle1",
+        "text": "Hmm",//嗯
+        "choices": [
+            {
+                "text": "snuggle1",
+                "uniques": [
+                      "Comment [Shasha~~~]"//沙沙~~~
+                ]//
+            },
+        ]
+    },
+    ]

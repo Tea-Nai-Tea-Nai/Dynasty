@@ -1,0 +1,601 @@
+[
+	//奖金
+	{
+		"name": "Cattle",//牛
+		"resourceType": "Bonus",//资源类型
+		"terrainsCanBeFoundOn": ["Grassland"],//生成地区
+		//"food": 1,
+		//"improvement": "Pasture",//改良方式
+		//"improvementStats": {"production": 1},//改良后属性
+		"uniques": ["Generated on every [18] tiles <in [{Featureless} {Grassland}] tiles>",
+					"Generated on every [22] tiles <in [{Featureless} {Grassland}] tiles> <in [Hill] Regions>"]//独特属性
+	},
+	{
+		"name": "Sheep",//羊
+		"resourceType": "Bonus",//资源类型
+		"terrainsCanBeFoundOn": ["Hill"],//生成地区
+		//"food": 1,
+		//"improvement": "Pasture",//改良方式
+		//"improvementStats": {"food": 1},//改良后属性
+		"uniques": ["Generated on every [13] tiles <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
+					"Generated on every [10] tiles <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]> <in tiles without [Fresh Water]> <in [Hill] Regions>"]//独特属性
+	},
+	{
+		"name": "Deer",//鹿
+		"resourceType": "Bonus",//资源类型
+		"terrainsCanBeFoundOn": ["Forest","Tundra"], //生成地区
+		//"food": 1,
+		//"improvement": "Camp",//改良方式
+		//"improvementStats": {"production": 1},//改良后属性
+		"uniques": ["Generated on every [8] tiles <in [{Tundra} {Forest}] tiles>",
+					"Generated on every [12] tiles <in [{Featureless} {Tundra}] tiles>",
+					"Generated on every [25] tiles <in [{Plains} {Forest}] tiles> <in tiles without [Hill]>",
+					"Generated on every [25] tiles <in [{Grassland} {Forest}] tiles> <in tiles without [Hill]>",
+					"Generated on every [16] tiles <in [{Featureless} {Tundra}] tiles> <in [Hill] Regions>",
+					"Generated on every [28] tiles <in [Forest] tiles> <in [Hill] Regions>"]//独特属性
+	},
+	{
+		"name": "Bananas",//香蕉
+		"resourceType": "Bonus",//资源类型
+		"terrainsCanBeFoundOn": ["Jungle"],//生成地区
+		//"food": 1,
+		//"improvement": "Plantation",//改良方式
+		//"improvementStats": {"food": 2,"production": -1,"gold": -1},//改良后属性
+		"uniques": ["Generated on every [14] tiles <in [Jungle] tiles>",
+					"Generated on every [16] tiles <in [Jungle] tiles> <in [Hill] Regions>"]//独特属性
+	},
+	{
+		"name": "Wheat",//小麦
+		"resourceType": "Bonus",//资源类型
+		"terrainsCanBeFoundOn": ["Plains","Flood plains","Desert"],//生成地区
+		//"food": 1,
+		//"improvement": "Farm",//改良方式
+		//"improvementStats": {"food": 1},//改良后属性
+		"uniques": ["Generated on every [27] tiles <in [{Featureless} {Plains}] tiles>",
+					"Generated on every [10] tiles <in [{Desert} {Fresh Water}] tiles> <in tiles without [Hill]>",
+					"Generated on every [20] tiles <in [{Featureless} {Plains}] tiles> <in [Hill] Regions>",
+					"Generated on every [20] tiles <in [{Fresh Water} {Desert}] tiles> <in tiles without [Hill]> <in [Hill] Regions>"]//独特属性
+	},
+	{
+		"name": "Stone",//石头
+		"resourceType": "Bonus",//资源类型
+		"terrainsCanBeFoundOn": ["Grassland","Desert","Tundra"],//生成地区
+		//"production": 1,
+		//"improvement": "Quarry",//改良方式
+		//"improvementStats": {"production": 1},//改良后属性
+		"uniques": ["Generated on every [20] tiles <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+					"Generated on every [15] tiles <in [{Featureless} {Tundra}] tiles>",
+					"Generated on every [19] tiles <in [{Featureless} {Desert}] tiles>"]//独特属性
+	},
+	{
+		"name": "Fish",//鱼
+		"resourceType": "Bonus",//资源类型
+		"terrainsCanBeFoundOn": ["Coast","Ocean"],//生成地区
+		//"food": 1,
+		//"improvement": "Fishing Boats",//改良方式
+		"uniques": ["Generated on every [10] tiles <in [{Featureless} {Coast}] tiles>"]//独特属性
+	},
+	//战略资源
+	{
+		"name": "Horses",//马
+		"resourceType": "Strategic",//资源类型
+		//"revealedBy": "Animal Husbandry",//解锁科技
+		"terrainsCanBeFoundOn": ["Plains","Grassland","Hill"],//生成地区
+		//"production": 1,
+		//"improvement": "Pasture",//改良方式
+		//"improvementStats": {"production": 1},//改良后属性
+		"uniques": ["Guaranteed with Strategic Balance resource option",
+					"Generated with weight [100] <in [{Featureless} {Grassland}] tiles>",
+					"Generated with weight [100] <in [{Featureless} {Plains}] tiles>",
+					"Minor deposits generated with weight [10] <in [{Grassland} {Hill}] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
+					"Minor deposits generated with weight [10] <in [{Plains} {Hill}] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
+					"Minor deposits generated with weight [100] <in [{Featureless} {Grassland}] tiles> <in [Fresh Water] tiles>",
+					"Minor deposits generated with weight [20] <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+					"Minor deposits generated with weight [30] <in [{Featureless} {Plains}] tiles>",
+					"Not shown on world screen <when above [100] [Horses]>",
+					"Stockpiled"
+					],//独特属性
+		"majorDepositAmount": {"sparse": 5, "default": 7, "abundant": 9},//大量资源数量
+		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 4}//少量资源数量
+	},
+	{
+		"name": "Iron",//铁
+		"resourceType": "Strategic",//资源类型
+		//"revealedBy": "Iron Working",//解锁科技
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert","Tundra","Snow","Hill","Marsh"],//生成地区
+		//"production": 1,
+		"improvement": "Mine",//改良方式
+		//"improvementStats": {"production": 1},//改良后属性
+		"uniques": ["Guaranteed with Strategic Balance resource option",
+					"Generated with weight [45] <in [{Featureless} {Tundra}] tiles>",
+					"Generated with weight [25] <in [{Featureless} {Snow}] tiles>",
+					"Generated with weight [35] <in [{Featureless} {Desert}] tiles>",
+					"Generated with weight [26] <in [Hill] tiles>",
+					"Minor deposits generated with weight [10] <in [Marsh] tiles> <in tiles without [Hill]>",
+					"Minor deposits generated with weight [10] <in [{Jungle} {Hill}] tiles>",
+					"Minor deposits generated with weight [20] <in [Forest] tiles>",
+					"Minor deposits generated with weight [20] <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
+					"Minor deposits generated with weight [30] <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+					"Minor deposits generated with weight [20] <in [{Featureless} {Plains}] tiles>",
+					"Minor deposits generated with weight [10] <in [{Featureless} {Desert}] tiles>",
+					"Minor deposits generated with weight [10] <in [{Featureless} {Tundra}] tiles>",
+					"Minor deposits generated with weight [10] <in [{Featureless} {Snow}] tiles>",
+					"Not shown on world screen <when above [100] [Iron]>",
+					"Stockpiled"
+					],//独特属性
+		"majorDepositAmount": {"sparse": 5, "default": 7, "abundant": 9},//大量资源数量
+		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 4}//少量资源数量
+	},
+	{
+		"name": "Coal",//煤
+		"resourceType": "Strategic",//资源类型
+		//"revealedBy": "Industrialization",//解锁科技
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill","Jungle","Forest","Marsh"],//生成地区
+		//"production": 1,
+		//"improvement": "Mine",//改良方式
+		//"improvementStats": {"production": 1},//改良后属性
+		"uniques": ["Generated with weight [35] <in [Hill] tiles>",
+					"Generated with weight [30] <in [Jungle] tiles> <in tiles without [Hill]>",
+					"Generated with weight [30] <in [Forest] tiles> <in tiles without [Hill]>",
+					"Minor deposits generated with weight [10] <in [Marsh] tiles> <in tiles without [Hill]>",
+					"Minor deposits generated with weight [10] <in [Jungle] tiles>",
+					"Minor deposits generated with weight [10] <in [Forest] tiles>",
+					"Minor deposits generated with weight [20] <in [{Grassland} {Hill}] tiles>",
+					"Minor deposits generated with weight [20] <in [{Plains} {Hill}] tiles>",
+					"Minor deposits generated with weight [30] <in [{Desert} {Hill}] tiles>",
+					"Minor deposits generated with weight [30] <in [{Tundra} {Hill}] tiles>",
+					"Minor deposits generated with weight [30] <in [{Snow} {Hill}] tiles>",
+					"Not shown on world screen <when above [100] [Coal]>",
+					"Stockpiled"
+					],//独特属性
+		"majorDepositAmount": {"sparse": 5, "default": 7, "abundant": 9},//大量资源数量
+		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 4}//少量资源数量
+	},
+	{
+		"name": "Oil",//石油
+		"resourceType": "Strategic",//资源类型
+		//"revealedBy": "Biology",//解锁科技
+		"terrainsCanBeFoundOn": ["Desert","Coast","Tundra","Snow","Marsh","Jungle"],//生成地区
+		//"production": 1,
+		//"improvedBy": ["Oil well", "Offshore Platform"],//改良方式
+		//"improvementStats": {"production": 3},//改良后属性
+		"uniques": ["Deposits in [Coast] tiles always provide [4] resources",
+					"Guaranteed with Strategic Balance resource option",
+					"Generated with weight [65] <in [Marsh] tiles> <in tiles without [Hill]>",
+					"Generated with weight [40] <in [{Featureless} {Tundra}] tiles>",
+					"Generated with weight [60] <in [{Featureless} {Snow}] tiles>",
+					"Generated with weight [65] <in [{Featureless} {Desert}] tiles>",
+					"Generated with weight [100] <in [{Featureless} {Coast}] tiles>",
+					"Minor deposits generated with weight [20] <in [Marsh] tiles> <in tiles without [Hill]>",
+					"Minor deposits generated with weight [10] <in [Jungle] tiles> <in tiles without [Hill]>",
+					"Minor deposits generated with weight [10] <in [{Featureless} {Desert}] tiles>",
+					"Minor deposits generated with weight [20] <in [{Featureless} {Tundra}] tiles>",
+					"Minor deposits generated with weight [20] <in [{Featureless} {Snow}] tiles>",
+					"Not shown on world screen <when above [100] [Oil]>",
+					"Stockpiled"
+					],//独特属性
+		"majorDepositAmount": {"sparse": 5, "default": 7, "abundant": 9},//大量资源数量
+		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 4}//少量资源数量
+	},
+	{
+		"name": "Aluminum",//铝
+		"resourceType": "Strategic",//资源类型
+		//"revealedBy": "Electricity",//解锁科技
+		"terrainsCanBeFoundOn": ["Desert","Tundra","Hill","Snow","Jungle"],//生成地区
+		//"production": 1,
+		//"improvement": "Mine",//改良方式
+		//"improvementStats": {"production": 1},//改良后属性
+		"uniques": ["Generated with weight [15] <in [{Featureless} {Tundra}] tiles>",
+					"Generated with weight [15] <in [{Featureless} {Snow}] tiles>",
+					"Generated with weight [39] <in [Hill] tiles>",
+					"Minor deposits generated with weight [20] <in [Jungle] tiles>",
+					"Minor deposits generated with weight [10] <in [{Featureless} {Desert}] tiles>",
+					"Not shown on world screen <when above [100] [Aluminum]>",
+					"Stockpiled"
+					],//独特属性
+		"majorDepositAmount": {"sparse": 5, "default": 7, "abundant": 9},//大量资源数量
+		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 4}//少量资源数量
+	},
+	{
+		"name": "Uranium",//铀
+		"resourceType": "Strategic",//资源类型
+		//"revealedBy": "Atomic Theory",//解锁科技
+		"terrainsCanBeFoundOn": ["Marsh","Jungle","Forest","Tundra","Snow"],//生成地区
+		//"production": 1,
+		//"improvement": "Mine",//改良方式
+		//"improvementStats": {"production": 1},//改良后属性
+		"uniques": ["Generated with weight [35] <in [Marsh] tiles> <in tiles without [Hill]>",
+					"Generated with weight [70] <in [Jungle] tiles> <in tiles without [Hill]>",
+					"Generated with weight [70] <in [Forest] tiles> <in tiles without [Hill]>",
+					"Minor deposits generated with weight [10] <in [Forest] tiles>",
+					"Minor deposits generated with weight [10] <in [{Featureless} {Tundra}] tiles>",
+					"Minor deposits generated with weight [10] <in [{Featureless} {Snow}] tiles>",
+					"Not shown on world screen <when above [100] [Aluminum]>",
+					"Stockpiled"
+					],//独特属性
+		"majorDepositAmount": {"sparse": 5, "default": 7, "abundant": 9},//大量资源数量
+		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 4}//少量资源数量
+	},
+
+	//奢侈资源
+	{
+		"name": "Furs",//皮毛
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Forest","Tundra"],//生成地区
+		//"gold": 2,
+		//"improvement": "Camp",//改良方式
+		//"improvementStats": {"gold": 1},//改良后属性
+		"uniques": ["Generated with weight [40] <in [Tundra] Regions>",
+					"Generated with weight [10] <in [Forest] Regions>",
+					"Generated near City States with weight [15]"]//独特属性
+	},
+	{
+		"name": "Cotton",//棉花
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Grassland","Flood plains"],//生成地区
+		//"gold": 2,
+		//"improvement": "Plantation",//改良方式
+		"uniques": ["Generated with weight [15] <in [Desert] Regions>",
+					"Generated with weight [30] <in [Grassland] Regions>",
+					"Generated with weight [15] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [Hill] tiles>"]//独特属性
+	},
+	{
+		"name": "Dyes",//染料
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Jungle","Forest","Marsh"],//生成地区
+		//"gold": 2,
+		//"improvement": "Plantation",//改良方式
+		"uniques": ["Generated with weight [5] <in [Tundra] Regions>",
+					"Generated with weight [5] <in [Jungle] Regions>",
+					"Generated with weight [30] <in [Forest] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [Hill] tiles>"]//独特属性
+	},
+	{
+		"name": "Gems",//宝石
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Jungle","Forest","Hill"],//生成地区
+		//"gold": 3,
+		//"improvement": "Mine",//改良方式
+		"uniques": ["Generated with weight [5] <in [Tundra] Regions>",
+					"Generated with weight [20] <in [Jungle] Regions>",
+					"Generated with weight [15] <in [Hill] Regions>",
+					"Generated with weight [5] <in [Grassland] Regions>",
+					"Generated with weight [5] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]>"]//独特属性
+	},
+	{
+		"name": "Gold Ore",//黄金
+		"resourceType": "Luxury",//	资源类型
+		"terrainsCanBeFoundOn": ["Desert","Hill","Forest","Jungle"],//生成地区
+		//"gold": 2,
+		//"improvement": "Mine",//改良方式
+		"uniques": ["Generated with weight [25] <in [Desert] Regions>",
+					"Generated with weight [30] <in [Hill] Regions>",
+					"Generated with weight [5] <in [Plains] Regions>",
+					"Generated with weight [5] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]>",
+					"Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>"]//独特属性
+	},
+	{
+		"name": "Silver",//白银
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Tundra","Grassland"],//生成地区
+		//"gold": 2,
+		//"improvement": "Mine",//改良方式
+		"uniques": ["Generated with weight [25] <in [Tundra] Regions>",
+					"Generated with weight [30] <in [Hill] Regions>",
+					"Generated with weight [20] <in [Grassland] Regions>",
+					"Generated with weight [10] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]>",
+					"Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>",
+					"Doesn't generate naturally <in [{Tundra} {Hill}] tiles>",
+					"Doesn't generate naturally <in [{Grassland} {Fresh Water}] tiles>",
+					"Doesn't generate naturally <in [{Grassland} {Hill}] tiles>"
+		]//独特属性
+	},
+	{
+		"name": "Incense",//香料
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Plains","Desert","Flood plains"],//生成地区
+		//"gold": 2,
+		//"improvement": "Plantation",//改良方式
+		"uniques": ["Generated with weight [35] <in [Desert] Regions>",
+					"Generated with weight [10] <in [Plains] Regions>",
+					"Generated with weight [5] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]"]//独特属性
+	},
+	{
+		"name": "Ivory",//象牙
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Plains","Grassland"],//生成地区
+		//"gold": 2,
+		//"improvement": "Camp",//改良方式
+		//"improvementStats": {"gold": 1},//改良后属性
+		"uniques": ["Generated with weight [35] <in [Plains] Regions>",
+					"Generated with weight [15] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [{Grassland} {Fresh Water}] tiles>"]//独特属性
+	},
+	{
+		"name": "Silk",//丝绸
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Forest","Jungle"],//生成地区
+		//"gold": 2,
+		//"improvement": "Plantation",//改良方式
+		"uniques": ["Generated with weight [5] <in [Jungle] Regions>",
+					"Generated with weight [30] <in [Forest] Regions>",
+					"Generated with weight [5] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]",
+					"Doesn't generate naturally <in [Hill] tiles>"]//独特属性
+	},
+	{
+		"name": "Spices",//香料
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Jungle","Forest","Marsh"],//生成地区
+		//"gold": 2,
+		//"improvement": "Plantation",//改良方式
+		"uniques": ["Generated with weight [30] <in [Jungle] Regions>",
+					"Generated with weight [10] <in [Forest] Regions>",
+					"Generated with weight [5] <in [Plains] Regions>",
+					"Generated with weight [5] <in [Grassland] Regions>",
+					"Generated with weight [5] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]",
+					"Doesn't generate naturally <in [Hill] tiles>",
+					"Doesn't generate naturally <in [{Tundra} {Forest}] tiles>"]//独特属性
+	},
+	{
+		"name": "Wine",//葡萄酒
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Grassland","Plains"],//生成地区
+		//"gold": 2,
+		//"improvement": "Plantation",//改良方式
+		"uniques": ["Generated with weight [35] <in [Plains] Regions>",
+					"Generated with weight [15] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]"]//独特属性
+	},
+	{
+		"name": "Sugar",//糖
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Flood plains","Grassland","Marsh"],//生成地区
+		// Technically sugar can also be placed on lowland jungles which then *turn* into marsh.
+		//"gold": 2,
+		//"improvement": "Plantation",//改良方式
+		"uniques": ["Generated with weight [20] <in [Jungle] Regions>",
+					"Generated with weight [15] <in [Desert] Regions>",
+					"Generated with weight [20] <in [Grassland] Regions>",
+					"Generated with weight [5] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [Grassland] tiles> <in tiles without [Fresh Water]>"]//独特属性
+	},
+	{
+		"name": "Marble",//大理石
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Desert","Plains","Hill","Grassland"],//生成地区
+		//"gold": 2,
+		//"improvement": "Quarry",//改良方式
+		//"improvementStats": {"production": 1},//改良后属性
+		"uniques": ["[+15]% Production when constructing [All] wonders [in this city]",
+					"Special placement during map generation",
+					"Doesn't generate naturally <in [{Grassland} {Fresh Water}] tiles>"]//独特属性
+	},
+	{
+		"name": "Whales",//鲸鱼
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Coast","Ocean"],//生成地区
+		//"food": 1,
+		//"gold": 1,
+		//"improvement": "Fishing Boats",//改良方式
+		"uniques": ["Generated with weight [35] <in [Tundra] Regions>",
+					"Generated with weight [10] <in [Forest] Regions>",
+					"Generated with weight [10] <in [Hill] Regions>",
+					"Generated with weight [5] <in [Plains] Regions>",
+					"Generated with weight [10] <in [Grassland] Regions>",
+					"Generated with weight [20] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]"]//独特属性
+	},
+	{
+		"name": "Pearls",//珍珠
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Coast"],//生成地区
+		//"gold": 2,
+		//"improvement": "Fishing Boats",//改良方式
+		"uniques": ["Generated with weight [20] <in [Jungle] Regions>",
+					"Generated with weight [10] <in [Forest] Regions>",
+					"Generated with weight [5] <in [Desert] Regions>",
+					"Generated with weight [15] <in [Hill] Regions>",
+					"Generated with weight [5] <in [Plains] Regions>",
+					"Generated with weight [10] <in [Grassland] Regions>",
+					"Generated with weight [20] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]"]//独特属性
+	},
+	{
+		"name": "Jewelry",//珠宝
+		"resourceType": "Luxury",//资源类型
+		//"gold": 2,
+		"uniques": ["Can only be created by Mercantile City-States"]//独特属性
+	},
+	{
+		"name": "Porcelain",//瓷器
+		"resourceType": "Luxury",//资源类型
+		//"gold": 2,
+		"uniques": ["Can only be created by Mercantile City-States"]//独特属性
+	},
+	{
+		"name": "Citrus",//柑橘
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Jungle","Forest","Flood plains"],//生成地区
+		//"food": 1,
+		//"gold": 1,
+		//"improvement": "Plantation",//改良方式
+		"uniques": ["Generated with weight [35] <in [Jungle] Regions>",
+					"Generated with weight [5] <in [Forest] Regions>",
+					"Generated with weight [5] <in [Desert] Regions>",
+					"Generated with weight [5] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]",
+					"Doesn't generate naturally <in [Tundra] tiles>"]//独特属性
+	},
+	{
+		"name": "Copper",//铜
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Hill","Forest","Jungle","Grassland","Tundra"],//生成地区
+		//"gold": 2,
+		//"improvement": "Mine",//改良方式
+		"uniques": ["Generated with weight [15] <in [Tundra] Regions>",
+					"Generated with weight [5] <in [Jungle] Regions>",
+					"Generated with weight [5] <in [Forest] Regions>",
+					"Generated with weight [10] <in [Desert] Regions>",
+					"Generated with weight [30] <in [Hill] Regions>",
+					"Generated with weight [20] <in [Grassland] Regions>",
+					"Generated with weight [20] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [{Grassland} {Fresh Water}] tiles>",
+					"Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>",
+					"Doesn't generate naturally <in [Forest] tiles> <in tiles without [Hill]> <in tiles without [Tundra]>"]//独特属性
+	},
+	{
+		"name": "Crab",//螃蟹
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Coast","Ocean"],//生成地区
+		//"food": 1,
+		//"gold": 1,
+		//"improvement": "Fishing Boats",//改良方式
+		"uniques": ["Generated with weight [30] <in [Tundra] Regions>",
+					"Generated with weight [5] <in [Jungle] Regions>",
+					"Generated with weight [10] <in [Forest] Regions>",
+					"Generated with weight [10] <in [Hill] Regions>",
+					"Generated with weight [5] <in [Plains] Regions>",
+					"Generated with weight [20] <in [Grassland] Regions>",
+					"Generated with weight [20] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]"]//独特属性
+	},
+	{
+		"name": "Salt",//盐
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Desert","Tundra","Plains","Forest"],//生成地区
+		//"gold": 1,
+		//"food": 1,
+		//"improvement": "Mine",//改良方式
+		"improvementStats": {"food": 1},//改良后属性
+		"uniques": ["Generated with weight [15] <in [Tundra] Regions>",
+					"Generated with weight [5] <in [Forest] Regions>",
+					"Generated with weight [15] <in [Desert] Regions>",
+					"Generated with weight [10] <in [Hill] Regions>",
+					"Generated with weight [25] <in [Plains] Regions>",
+					"Generated with weight [15] <in [Hybrid] Regions>",
+					"Generated near City States with weight [10]",
+					"Doesn't generate naturally <in [{Forest} {Hill}] tiles>"]//独特属性
+	},
+	{
+		"name": "Truffles",//松露
+		"resourceType": "Luxury",//资源类型
+		"terrainsCanBeFoundOn": ["Forest","Marsh","Jungle"],//生成地区
+		//"gold": 2,
+		//"improvement": "Camp",//改良方式
+		//"improvementStats": {"gold": 1},//改良后属性
+		"uniques": ["Generated with weight [5] <in [Jungle] Regions>",
+					"Generated with weight [30] <in [Forest] Regions>",
+					"Generated with weight [5] <in [Plains] Regions>",
+					"Generated with weight [5] <in [Grassland] Regions>",
+					"Generated with weight [10] <in [Hybrid] Regions>",
+					"Generated near City States with weight [15]",
+					"Doesn't generate naturally <in [{Forest} {Hill}] tiles>",
+					"Doesn't generate naturally <in [{Tundra} {Forest}] tiles>"]//独特属性
+	},
+
+
+
+
+
+
+    //帮助资源
+	{
+		"name": "Camp-help",//猎场-帮助
+		"resourceType": "Strategic",//资源类型
+		"uniques": [
+			"City-level resource",
+			"[+10]% Production when constructing [Military] units [in this city] <for every [Camp-help]>"
+					],//独特属性
+	},
+	{
+		"name": "Recuperation",//休整
+		"resourceType": "Strategic",//资源类型
+		"uniques": [
+			//"City-level resource",
+			"Stockpiled"
+					],//独特属性
+	},
+	{
+		"name": "Warrior-resource",//勇士资源
+		"resourceType": "Strategic",//资源类型
+		"uniques": [
+			//"City-level resource",
+			"Stockpiled"
+					],//独特属性
+	},
+
+
+	{
+		"name": "Capital-resource",//首都资源
+		"resourceType": "Strategic",//资源类型
+		"uniques": [
+			"City-level resource",
+			"Not shown on world screen"
+					],//独特属性
+	},
+	{
+		"name": "Capital-resource1",//首都资源
+		"resourceType": "Strategic",//资源类型
+		"uniques": [
+			"Not shown on world screen"
+					],//独特属性
+	},
+	
+	{
+		"name": "Grain",//粮
+		"resourceType": "Strategic",//资源类型
+		"uniques": [
+			"City-level resource"
+					],//独特属性
+	},
+	{
+		"name": "Grain1",//粮1
+		"resourceType": "Strategic",//资源类型
+		"uniques": [
+			//"City-level resource",
+			//"Cannot be traded"
+			"Stockpiled"
+					],//独特属性
+	},
+
+
+
+
+
+	///////////////////成人内容//////////////////////////
+	{
+		"name": "Adult-resourc",//成人资源
+		"resourceType": "Strategic",//资源类型
+		"uniques": [
+			//"City-level resource",
+			"Cannot be traded",
+			"Stockpiled",
+			"Not shown on world screen"
+					],//独特属性
+	},
+	{
+		"name": "Catgirl-resourc",//猫娘资源
+		"resourceType": "Strategic",//资源类型
+		"uniques": [
+			//"City-level resource",
+			"Cannot be traded",
+			"Not shown on world screen"
+			//"Stockpiled"
+					],//独特属性
+	},
+]

@@ -1,0 +1,31 @@
+[
+	{
+		"name": "Normal",//正常
+		"baseHappiness": 10,//初始快乐
+		"extraHappinessPerLuxury": 0,//奢饰品提供的额外快乐
+		"researchCostModifier": 1,//科技研究成本修正
+		"unitCostModifier": 1,//建造单位的成本修正
+		"unitSupplyBase": 0,//初始单位补给
+		"unitSupplyPerCity": 0,//每座城市提供的单位补给
+		"buildingCostModifier": 1,//建筑需要的产能修正
+		"policyCostModifier": 1,//所需的政策花费修正
+		"unhappinessModifier": 1,//不满修正
+		"barbarianBonus": 0,//攻击蛮族加强
+		"barbarianSpawnDelay": 0,//延迟蛮族生成回合
+		"playerBonusStartingUnits": [],//玩家初始单位
+		"aiCityGrowthModifier": 1, //AI城市人口增长修正
+		"aiUnitCostModifier": 1,//AI单位所需的成本修正
+		"aiBuildingCostModifier": 1,//AI建筑所需的成本修正
+		"aiWonderCostModifier": 1,//AI奇观所需的成本修正
+		"aiBuildingMaintenanceModifier": 1,//AI的建筑维护成本修正
+		"aiUnitMaintenanceModifier": 0,//AI单位的维护成本修正
+		"aiUnitSupplyModifier": 0,//AI单位补给的成本修正
+		"aiFreeTechs": [],//AI初始自带科技
+		"aiMajorCivBonusStartingUnits": [],//主要AI文明初始自带单位
+		"aiCityStateBonusStartingUnits": [],//城邦AI文明初始自带单位
+		"aiUnhappinessModifier": 1,//减少AI的不满
+		"aisExchangeTechs": false,//判定AI是否进行科技交换
+		"turnBarbariansCanEnterPlayerTiles": 0,//蛮族需要多少回合后才能进入文明领土内
+		"clearBarbarianCampReward": 0//清除一个蛮族城寨提供的金币奖励
+	},
+]

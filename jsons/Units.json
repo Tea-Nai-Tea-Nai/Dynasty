@@ -1,0 +1,267 @@
+[
+
+	// Info according to Civilization Wiki and https://www.civfanatics.com/civ5/info/units/gods-and-kings/
+
+    {
+		"name": "Settler-package",//定居者包
+		"unitType": "Civilian",
+		"movement": 1,
+		"cost": 100,
+		"uniques": [
+		"Gain [-50] [Gold] <before the [Iron Age]>",
+		"Gain [-10] [Gold] <before the [Electric Age]>",
+		"[-1] population [in this city] <before the [Bronze Age]>",
+		"Requires at least [2] population <before the [Bronze Age]>",
+		 "Gain [-5] [Gold] <upon turn end> <starting from the [Bronze Age]> <before the [Iron Age]>",
+		"Gain [-1] [Gold] <upon turn end> <before the [Electric Age]>",
+		"[This Unit] takes [10] damage <upon turn end> <before the [Iron Age]>",
+		"[This Unit] takes [5] damage <upon turn end> <before the [Electric Age]>",
+		"[5] free [Settler] units appear <by consuming this unit>",
+		"Unbuildable <for [AI player] Civilizations>",
+		"[+1] population [in this city]<by consuming this unit>"
+		],
+		//"hurryCostModifier": 20
+	},
+
+	{
+		"name": "Settler",//定居者
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 20,
+		"uniques": [
+		"Founds a new city <by consuming this unit>",
+        "[This Unit] takes [10] damage <upon turn end> <before the [Iron Age]>",
+		"[This Unit] takes [5] damage <upon turn end> <before the [Electric Age]>",
+        "Gain [-5] [Gold] <upon turn end> <starting from the [Bronze Age]> <before the [Iron Age]>",
+		"Gain [-1] [Gold] <upon turn end> <before the [Electric Age]>",
+		"Gain [-10] [Gold] <before the [Iron Age]> <for [AI player] Civilizations>",
+		"Gain [-2] [Gold] <before the [Electric Age]> <for [AI player] Civilizations>",
+		"Instantly gain [-1] [Recuperation]",
+		"Instantly provides [+1] [Recuperation] <in [in this city] cities> <by consuming this unit>"
+		],
+		//"hurryCostModifier": 20
+	},
+
+	{
+		"name": "Worker-package",//工人包
+		"unitType": "Civilian",
+		"movement": 1,
+		"cost": 40,
+		"uniques": [
+        "[5] free [Worker] units appear <by consuming this unit>",
+		"[-1] population [in this city] <before the [Bronze Age]>",
+		"Requires at least [2] population<before the [Bronze Age]>",
+		"Unbuildable <for [AI player] Civilizations>",
+		"[+1] population [in this city]<by consuming this unit>"
+		],
+	},
+	{
+		"name": "Worker",//工人
+		"unitType": "Civilian",
+		"movement": 1,
+		"cost": 8,
+		"uniques": [
+		"Can build [Land] improvements on tiles",
+		"Automation is a primary action",
+	    "Instantly gain [-1] [Recuperation]",
+		"Instantly provides [+1] [Recuperation] <in [in this city] cities> <by consuming this unit>",
+		//"Can instantly construct a [Capital] improvement <costs [1] [Capital-resource1]> <by consuming this unit> <when above [0] [Capital-resource1]>"
+     ],
+	},
+
+	{
+		"name": "Work Boats-package",//工作船包
+		"unitType": "Civilian-Water",
+		"requiredTech": "Technology8",
+		"movement": 1,
+		"cost": 40,
+		"uniques": [
+        "[5] free [Worker] units appear <by consuming this unit>",
+		"[-1] population [in this city] <before the [Bronze Age]>",
+		"Requires at least [2] population<before the [Bronze Age]>",
+		"Unbuildable <for [AI player] Civilizations>",
+		"[+1] population [in this city]<by consuming this unit>"
+		],
+	},
+	{
+		"name": "Work Boats",//工作船
+		"unitType": "Civilian-Water",
+		"requiredTech": "Technology8",
+		"movement": 1,
+		"cost": 8,
+		"uniques": [
+		"Can build [Water] improvements on tiles",
+		"Automation is a primary action",
+	    "Instantly gain [-1] [Recuperation]",
+		"Instantly provides [+1] [Recuperation] <in [in this city] cities> <by consuming this unit>"
+     ],
+	},
+
+
+
+	{
+		"name": "Warrior-package",//勇士包
+		"unitType": "Sword",
+		"movement": 1,
+		"strength": 1,
+		"cost": 50,
+		"requiredTech": "Technology7",
+		//"obsoleteTech": "Metal Casting",//过时科技
+		//"upgradesTo": "Swordsman",//升级目标
+		"uniques" : [
+		"[5] free [Warrior] units appear <by consuming this unit>",
+		"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
+		"[-1] population [in this city]<before the [Bronze Age]>",
+		"Requires at least [2] population<before the [Bronze Age]>",
+		"Unbuildable <for [AI player] Civilizations>",
+		"[+1] population [in this city]<by consuming this unit>"
+		],
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+		]
+	},
+	{
+		"name": "Warrior",//勇士
+		"unitType": "Sword",
+		"movement": 1,
+		"strength": 8,
+		"cost": 10,
+		"requiredTech": "Technology7",
+		//"obsoleteTech": "Metal Casting",
+		//"upgradesTo": "Swordsman",
+		"uniques" : [
+		//"May upgrade to [Spearman] through ruins-like effects"
+		//"[This Unit] heals [5] HP<for [1] movement>"
+		//"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
+		"Can only be built <within [3] tiles of a [Camp]>",
+		"Never appears as a Barbarian unit",
+		"Instantly gain [-1] [Recuperation]",
+		"Instantly provides [+1] [Warrior-resource] <in [in this city] cities> <by consuming this unit>"
+		],
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+		]
+	},
+	{
+		"name": "Warrior1",//勇士
+		"unitType": "Sword",
+		"movement": 1,
+		"strength": 8,
+		"cost": 0,
+		"requiredTech": "Technology7",
+		//"obsoleteTech": "Metal Casting",
+		//"upgradesTo": "Swordsman",
+		"uniques" : [
+		//"May upgrade to [Spearman] through ruins-like effects"
+		//"[This Unit] heals [5] HP<for [1] movement>"
+		"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
+		"Never appears as a Barbarian unit",
+		"Costs [1] [Warrior-resource]",
+		"Instantly provides [+1] [Warrior-resource] <in [in this city] cities> <by consuming this unit>"
+		],
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+		]
+	},
+    
+
+
+
+
+	{
+		"name": "Catgirl",//猫娘
+		"unitType": "Civilian",
+		"movement": 1,
+		"cost": 1,
+		"uniques": [
+		"'Harem'",
+		"Unbuildable",
+		"Limited to [1] per Civilization",
+		"Triggers a [Catgirl-favor-choice] event <for all movement>",
+		"Only available <when [Adult] Victory is enabled> <hidden from users>"
+		//"Instantly provides [1] [Catgirl-resourc]"
+		//"Provides [1] [Catgirl-resourc]"
+
+     ],
+	},
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	{
+		"name": "Great Agriculturalist",//农业家
+		"unitType": "Civilian",
+		"uniques": [
+            "Is part of Great Person group [Great Person]",
+            "Great Person - [Agriculturalist]", 
+			"Unbuildable", 
+			"Uncapturable"
+		],
+		"movement": 1
+	},
+	{
+		"name": "Great Scientist",//科学家
+		"unitType": "Civilian",
+		"uniques": [
+            "Is part of Great Person group [Great Person]",
+            "Great Person - [Science]", 
+			"Unbuildable", 
+			"Uncapturable"
+		],
+		"movement": 1
+	},
+	{
+		"name": "Great Merchant",//商人
+		"unitType": "Civilian",
+		"uniques": [
+            "Is part of Great Person group [Great Person]",
+            "Great Person - [Merchant]", 
+			"Unbuildable", 
+			"Uncapturable"
+		],
+		"movement": 1
+	},
+	{
+		"name": "Great Artist",//艺术家
+		"unitType": "Civilian",
+		"uniques": [
+            "Is part of Great Person group [Great Person]",
+            "Great Person - [Artist]", 
+			"Unbuildable", 
+			"Uncapturable"
+		],
+		"movement": 1
+	},
+	{
+		"name": "Great Engineer",//工程师
+		"unitType": "Civilian",
+		"uniques": [
+            "Is part of Great Person group [Great Person]",
+            "Great Person - [Engineer]", 
+			"Unbuildable", 
+			"Uncapturable"
+		],
+		"movement": 1
+	},
+]

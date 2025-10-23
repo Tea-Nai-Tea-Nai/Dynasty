@@ -1,0 +1,26 @@
+[
+    //晋升
+    {
+		"name": "Heal Instantly",//浴火重生
+		"uniques": ["[This Unit] heals [30] HP", 
+		"Doing so will consume this opportunity to choose a Promotion",
+		"[This Unit] gains the [Fight or retreat] status for [2] turn(s)"
+		],
+		"unitTypes": ["Sword","Civilian"],
+		"innerColor": [195,53,43],
+		"outerColor": [253,236,234],
+        "row": 0,
+        "column": 0
+    },
+	 {
+		"name": "Fight or retreat",//战斗或撤退
+		"uniques": ["[+1] Movement",
+		"[+10]% Strength"
+		],
+		"unitTypes": ["Sword","Civilian"],
+		"innerColor": [195,53,43],
+		"outerColor": [253,236,234],
+        "row": 1,//行
+        "column": 0//列
+    },
+    ]

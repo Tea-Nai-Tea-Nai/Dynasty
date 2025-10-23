@@ -1,0 +1,60 @@
+[
+    
+
+    {
+        "name": "Stone Age",//石器时代
+        "researchAgreementCost": 0,//研究协议费用
+        "startingSettlerCount": 1, //初始定居者数量
+        "startingWorkerCount": 1,//初始工人数量
+        "startingMilitaryUnitCount": 1,//初始军事单位数量
+        "startingMilitaryUnit": "Warrior",//初始军事单位
+        "settlerPopulation": 1,//定居者人口
+        "baseUnitBuyCost": 0,//基础单位购买费用
+        "embarkDefense": 3,//登船防御
+        "startPercent": 0,//起始百分比
+        "citySound": "cityAncient",//城市图像
+        "iconRGB": [255, 87, 35]//图标颜色
+    },
+    {
+        "name": "Bronze Age",//青铜时代
+        "researchAgreementCost": 0,//研究协议费用
+        "startingSettlerCount": 1, //初始定居者数量
+        "startingWorkerCount": 1,//初始工人数量
+        "startingMilitaryUnitCount": 1,//初始军事单位数量
+        "startingMilitaryUnit": "Warrior",//初始军事单位
+        "settlerPopulation": 1,//定居者人口
+        "baseUnitBuyCost": 0,//基础单位购买费用
+        "embarkDefense": 3,//登船防御
+        "startPercent": 0,//起始百分比
+        "citySound": "cityAncient",//城市图像
+        "iconRGB": [255, 87, 35]//图标颜色
+    },
+      {
+        "name": "Iron Age",//铁器时代
+        "researchAgreementCost": 0,//研究协议费用
+        "startingSettlerCount": 1, //初始定居者数量
+        "startingWorkerCount": 1,//初始工人数量
+        "startingMilitaryUnitCount": 1,//初始军事单位数量
+        "startingMilitaryUnit": "Warrior",//初始军事单位
+        "settlerPopulation": 1,//定居者人口
+        "baseUnitBuyCost": 0,//基础单位购买费用
+        "embarkDefense": 3,//登船防御
+        "startPercent": 0,//起始百分比
+        "citySound": "cityAncient",//城市图像
+        "iconRGB": [255, 87, 35]//图标颜色
+    },
+     {
+        "name": "Electric Age",//电器时代
+        "researchAgreementCost": 0,//研究协议费用
+        "startingSettlerCount": 1, //初始定居者数量
+        "startingWorkerCount": 1,//初始工人数量
+        "startingMilitaryUnitCount": 1,//初始军事单位数量
+        "startingMilitaryUnit": "Warrior",//初始军事单位
+        "settlerPopulation": 1,//定居者人口
+        "baseUnitBuyCost": 0,//基础单位购买费用
+        "embarkDefense": 3,//登船防御
+        "startPercent": 0,//起始百分比
+        "citySound": "cityAncient",//城市图像
+        "iconRGB": [255, 87, 35]//图标颜色
+    },
+]

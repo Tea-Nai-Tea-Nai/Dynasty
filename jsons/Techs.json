@@ -1,0 +1,186 @@
+[
+/*Stone Age = 石器时代
+Bronze Age = 青铜时代
+Iron Age = 铁器时代
+Electric Age = 电器时代
+*/
+	{
+		"columnNumber": 0,//列
+		"era": "Stone Age",//远古时代
+		//"techCost": 20,//科研点
+		"buildingCost": 0,//建筑成本
+		"wonderCost": 0,//奇观成本
+		"techs": [
+			{
+				"name": "Technology1",//科技1
+				"row": 1,//上下行
+				"cost": 10,//科研点
+				"quote": "",//文本
+				"uniques": ["Starting tech"]//能力
+			},
+			{
+				"name": "Technology2",//科技2
+				"row": 2,//上下行
+				"cost": 10,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+			{
+				"name": "Technology3",//科技3
+				"row": 3,//上下行
+				"cost": 10,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+			{
+				"name": "Technology4",//科技4
+				"row": 4,//上下行
+				"cost": 10,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+			{
+				"name": "Technology5",//科技5
+				"row": 5,//上下行
+				"cost": 10,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+			{
+				"name": "Technology6",//科技6
+				"row": 6,//上下行
+				"cost": 10,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+		]
+	    },
+		{
+		"columnNumber": 1,//列
+		"era": "Stone Age",//远古时代
+		//"techCost": 20,//科研点
+		"buildingCost": 0,//建筑成本
+		"wonderCost": 0,//奇观成本
+		"techs": [
+			{
+				"name": "Technology7",//科技7
+				"row": 1,//上下行
+				"cost": 20,//科研点
+				"quote": "",//文本
+				"uniques": ["[100]% weight to this choice for AI decisions"]//能力
+			},
+			{
+				"name": "Technology8",//科技8
+				"row": 2,//上下行
+				"cost": 20,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+			{
+				"name": "Technology9",//科技9
+				"row": 3,//上下行
+				"cost": 20,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+				{
+				"name": "Technology10",//科技10
+				"row": 4,//上下行
+				"cost": 20,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+			{
+				"name": "Technology11",//科技11
+				"row": 5,//上下行
+				"cost": 20,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+			{
+				"name": "Technology12",//科技12
+				"row": 6,//上下行
+				"cost": 20,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+		]
+	},
+	{
+		"columnNumber": 2,//列
+		"era": "Stone Age",//远古时代
+		//"techCost": 20,//科研点
+		"buildingCost": 0,//建筑成本
+		"wonderCost": 0,//奇观成本
+		"techs": [
+			
+			{
+				"name": "Technology13",//科技13
+				"row": 1,//上下行
+				"cost": 30,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+			{
+				"name": "Technology14",//科技14
+				"row": 2,//上下行
+				"cost": 30,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+			{
+				"name": "Technology15",//科技15
+				"row": 3,//
+				"cost": 30,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+			{
+				"name": "Technology16",//科技16
+				"row": 4,//上下行
+				"cost": 30,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+			{
+				"name": "Technology17",//科技17
+				"row": 5,//上下行
+				"cost": 30,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+			{
+				"name": "Technology18",//科技18
+				"row": 6,//上下行
+				"cost": 30,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			}
+		]
+	    },
+		{
+		"columnNumber": 3,//列
+		"era": "Stone Age",//远古时代
+		//"techCost": 20,//科研点
+		"buildingCost": 0,//建筑成本
+		"wonderCost": 0,//奇观成本
+		"techs": [
+			{
+				"name": "Technology19",//科技19
+				"row": 1,//上下行
+				"cost": 40,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			},
+			{
+				"name": "Technology20",//科技20
+				"row": 2,//上下行
+				"cost": 40,//科研点
+				"quote": "",//文本
+				"uniques": [""]//能力
+			}
+		]
+	}
+
+	
+]
