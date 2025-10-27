@@ -19,19 +19,20 @@
 		"name": "Farm",//农田
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Flood plains"],//可建造地形
 		"turnsToBuild": 3,//构建时间
+		"food": 1,//食物
 		//"techRequired": "Technology5",//所需科技
 		"uniques": [//"Can also be built on tiles adjacent to fresh water",
 		    //"Cannot be built on [Hills] tiles",
-			"[+1 Food] <for [AI player] Civilizations>",
+			//"[+1 Food] <for [AI player] Civilizations>",
 			"Improves [Wheat] resource in this tile",
 			"[+1 Food] from [Wheat] tiles",
 			"[+1 Food] from [River] tiles",
-			"[+1 Food] <with [1] to [3] neighboring [Thatched Cottage] tiles>",
-			"[+1 Food] <with [4] to [6] neighboring [Thatched Cottage] tiles>",
-			"[+1 Food] <with [1] to [6] neighboring [Rivers] tiles>",
-			"[+1 Food] <with [1] to [2] neighboring [Farm] tiles>",
-			"[+1 Food] <with [1] to [2] neighboring [Farm] tiles>",
-			"[+1 Food] <with [5] to [6] neighboring [Farm] tiles>",
+			"[+1 Food] <with [1] to [3] neighboring ['House'] tiles>",
+			"[+1 Food] <with [4] to [6] neighboring ['House'] tiles>",
+			"[+1 Food] <in tiles adjacent to [Rivers] tiles>",
+			//"[+1 Food] <with [1] to [2] neighboring [Farm] tiles>",
+			"[+1 Food] <with [2] to [3] neighboring [Farm] tiles>",
+			"[+1 Food] <with [4] to [6] neighboring [Farm] tiles>",
 			"Only available <after adopting [Cultivate]>",
 			"Pillaging this improvement yields approximately [+15 Gold]"
 			],//能力
@@ -128,6 +129,8 @@
 		"faith": 1,//信仰
 		//"techRequired": "Technology10",//所需科技
 		"uniques": [
+		"[+1 Culture] <with [1] to [3] neighboring [Totem pole] tiles>",
+		"[+1 Culture] <with [4] to [6] neighboring [Totem pole] tiles>",
 		"[+1 Faith] <with [1] to [3] neighboring [Altar] tiles>",
 		"[+1 Faith] <with [4] to [6] neighboring [Altar] tiles>",
 		"[+1 Faith] <with [1] to [3] neighboring [Mural] tiles>",
@@ -137,8 +140,23 @@
 		//"Remove [Forest] improvements from this tile",
 		//"Remove [Jungle] improvements from this tile",
 		"Cannot be built on [Mountain] tiles",
-		"Only available <after adopting [Worship]>",
-		"Pillaging this improvement yields approximately [+50 Gold]"
+		"Only available <after adopting [Sacrificial]>",
+		"Pillaging this improvement yields approximately [+30 Gold]"
+		]//能力
+	},
+	{
+		"name": "Totem pole",//图腾柱
+		"terrainsCanBeBuiltOn": ["Land"],//可建造地形
+		"turnsToBuild": 3,//构建时间
+		"culture": 1,//文化
+		//"techRequired": "Technology10",//所需科技
+		"uniques": [
+		"[+1 Culture] <with [1] to [3] neighboring [Altar] tiles>",
+		"[+1 Culture] <with [4] to [6] neighboring [Altar] tiles>",
+		"Cannot be built on [Mountain] tiles",
+		"Must be next to [Altar]",
+		"Only available <after adopting [Sacrificial]>",
+		"Pillaging this improvement yields approximately [+10 Gold]"
 		]//能力
 	},
 	{
@@ -156,7 +174,7 @@
 		"[+1 Gold] <with [5] to [6] neighboring [Trading post] tiles>",
 		"Can be built just outside your borders",
 		//"Only available <after adopting [Mutual trade]>",
-		"Only available <after adopting [Trade market]>",
+		"Only available <after adopting [Trade development]>",
 		 "Pillaging this improvement yields approximately [+30 Gold]"
 		]
 
@@ -196,7 +214,7 @@
 		"name": "Granary",//粮仓
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Flood plains"],//可建造地形
 		"turnsToBuild": 3,
-		"techRequired": "Technology13",
+		//"techRequired": "Technology13",
 		"uniques": [
 		"[+1 Food] <for [AI player] Civilizations>",
 		"[+1 Food] <with [1] to [3] neighboring [Farm] tiles>",
@@ -231,14 +249,33 @@
 			"Pillaging this improvement yields approximately [+20 Gold]"
 			],//能力
 	},
+	{
+		"name": "Fence",//栅栏
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle","Cherry blossom forest"],
+		"turnsToBuild": 1,//构建时间
+		//"techRequired": "Engineering",//所需科技
+		"uniques": [
+		"Ensures a minimum tile yield of [+0 Production, +0 Food, +0 Gold, +0 Science, +0 Culture, +0 Faith, +0 Happiness]",
+		"Tile provides yield without assigned population",
+		"Can be built just outside your borders",
+		"Gives a defensive bonus of [25]%"],
+		
+	},
+
 
 	{
 		"name": "Capital",//首都
-		"turnsToBuild": 3,//构建时间  
 		"terrainsCanBeBuiltOn": ["Land"],//可建造地形
+		"turnsToBuild": 3,//构建时间  
+		"food": 1,//食物
+		"production": 1,//产量
+		"culture": 1,//文化
+		"gold": 1,//黄金
+		"science": 1,//科学
 		"uniques": [
-		"[+1 Food, +1 Production, +1 Culture] <for [AI player] Civilizations>",
+		//"[+1 Food, +1 Production, +1 Culture, +1 Gold] <for [AI player] Civilizations>",
 	    "Provides [+1] [Capital-resource]",
+		"Provides [+1] [Clan Council-resource]",
 		"Consumes [1] [Capital-resource1]",
 		"Only available <when above [0] [Capital-resource1]>",
 		"Unavailable <when below [0] [Capital-resource1]>",
@@ -261,9 +298,29 @@
 		"[+1 Food] <with [5] to [6] neighboring [Fishing Boats] tiles>",
 		"Will not be replaced by automated units",
 		//"Limited to [1] per Civilization",
+		"'Political center'",
+		"'Political center'",
 		"'House'",
 		"Pillaging this improvement yields approximately [+100 Gold]"
 	],
+	},
+	{
+		"name": "Clan Council",//氏族议会
+		"terrainsCanBeBuiltOn": ["Land"],//可建造地形
+		"turnsToBuild": 3,//构建时间
+		"science": 1,//科学
+		//"techRequired": "Technology10",//所需科技
+		"uniques": [
+		"Consumes [1] [Clan Council-resource]",
+		"Cannot be built on [Mountain] tiles",
+		"Must be next to ['Political center']",
+		"Only available <when above [0] [Clan Council-resource]>",
+		"Unavailable <when below [0] [Clan Council-resource]>",
+		"Unbuildable <when below [0] [Clan Council-resource]>",
+		"Cannot be built on [Mountain] tiles",
+		"Will not be replaced by automated units",
+		"Pillaging this improvement yields approximately [+40 Gold]"
+		]//能力
 	},
 
 

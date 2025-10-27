@@ -574,7 +574,14 @@
 			"Not shown on world screen"
 					],//独特属性
 	},
-	
+	{
+		"name": "Clan Council-resource",//氏族议会资源
+		"resourceType": "Strategic",//资源类型
+		"uniques": [
+			"Not shown on world screen"
+					],//独特属性
+	},
+
 	{
 		"name": "Grain",//粮
 		"resourceType": "Strategic",//资源类型

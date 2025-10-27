@@ -1,6 +1,6 @@
 [
      {
-        "name": "Settlement Tribe",//定居部落
+        "name": "Policys",//政策
         "era": "Stone Age",// 时代
         "priorities": {
             "Neutral": 5,
@@ -14,12 +14,32 @@
         ],// 独特属性
         "policies": [// 政策
             {
+                "name": "Settlement Tribe",//定居部落
+                "uniques": [
+                 //"Comment [Unlocks [Farm]]",
+                ],// 独特属性
+                "row": 1,// 行
+                "column": 3// 列
+            }, 
+            {
+                "name": "Cancel Settlement Tribe",//取消定居部落
+                "uniques": [
+                "Remove [Settlement Tribe] and refund [50]% of its cost",
+                "Remove [Cancel Settlement Tribe] and refund [100]% of its cost",
+                "Unavailable <for [AI player] Civilizations>"
+                ],// 
+                "requires": ["Settlement Tribe"],//定居部落
+                "row": 2,// 行
+                "column": 3// 列
+            },
+             {
                 "name": "Cultivate",//耕种
                 "uniques": [
                  "Comment [Unlocks [Farm]]",
                 ],// 独特属性
-                "row": 1,// 行
-                "column": 1// 列
+                "requires": ["Settlement Tribe"],//定居部落
+                "row": 2,// 行
+                "column": 5// 列
             }, 
             {
                 "name": "Cancel Cultivate",//取消耕种
@@ -29,16 +49,16 @@
                 "Unavailable <for [AI player] Civilizations>"
                 ],// 
                 "requires": ["Cultivate"],//前置政策
-                "row": 2,// 行
-                "column": 1// 列
+                "row": 3,// 行
+                "column": 5// 列
             },
-             {
+            {
                 "name": "Grain storage",//屯粮
                 "uniques": [
                  "Comment [Unlocks [Granary]]",
                 ],// 独特属性
                 "requires": ["Cultivate"],//前置政策
-                "row": 2,// 行
+                "row": 3,// 行
                 "column": 3// 列
             },
              {
@@ -49,7 +69,7 @@
                 "Unavailable <for [AI player] Civilizations>"
                 ],// 
                 "requires": ["Grain storage"],//前置政策
-                "row": 3,// 行
+                "row": 4,// 行
                 "column": 3// 列
             },
              {
@@ -57,8 +77,9 @@
                 "uniques": [
                  "Comment [Unlocks [Tao kiln]]",
                 ],// 独特属性
-                "row": 1,// 行
-                "column": 5// 列
+                "requires": ["Settlement Tribe"],//定居部落
+                "row": 2,// 行
+                "column": 1// 列
             },
              {
                 "name": "Cancel Ceramic Craftsmanship",//取消陶制工艺
@@ -68,40 +89,39 @@
                 "Unavailable <for [AI player] Civilizations>"
                 ],// 
                 "requires": ["Ceramic Craftsmanship"],//前置政策
-                "row": 2,// 行
-                "column": 5// 列
+                "row": 3,// 行
+                "column": 1// 列
             },
+            
+            
             {
-                "name": "Settlement Tribe Complete",// 定居部落完成
+                "name": "Nomadic tribe",//游牧部落
                 "uniques": [
-                "Comment [It's impossible to open everything]",//不可能全部打开的
-            ]// 独特属性
-            }
-        ]
-    },
-
-
-     {
-        "name": "Nomadic tribe",//游牧部落
-        "era": "Stone Age",// 时代
-        "priorities": {
-            "Neutral": 5,
-            "Cultural": 5,
-            "Diplomatic": 5,
-            "Domination": 10,
-            "Scientific": 5
-        },// 优先级
-        "uniques": [
-            "[+1 Food] from [Grassland] tiles [in your cities]"
-        ],// 独特属性
-        "policies": [// 政策
+                 //"Comment [Unlocks [Farm]]",
+                  "[+1 Food] from [Grassland] tiles [in your cities]"
+                ],// 独特属性
+                "row": 1,// 行
+                "column": 7// 列
+            }, 
             {
+                "name": "Cancel Nomadic tribe",//取消游牧部落
+                "uniques": [
+                "Remove [Settlement Tribe] and refund [50]% of its cost",
+                "Remove [Cancel Settlement Tribe] and refund [100]% of its cost",
+                "Unavailable <for [AI player] Civilizations>"
+                ],// 
+                "requires": ["Nomadic tribe"],//游牧部落
+                "row": 2,// 行
+                "column": 7// 列
+            },
+             {
                 "name": "Grazing",//放牧
                 "uniques": [
                  "Comment [Unlocks [Grazing]]",
                 ],// 独特属性
-                "row": 1,// 行
-                "column": 1// 列
+                "requires": ["Nomadic tribe"],//游牧部落
+                "row": 2,// 行
+                "column": 9// 列
             },
              {
                 "name": "Cancel Grazingp",//取消放牧
@@ -111,103 +131,58 @@
                 "Unavailable <for [AI player] Civilizations>"
                 ],// 
                 "requires": ["Grazing"],//前置政策
-                "row": 2,// 行
-                "column": 1// 列
+                "row": 3,// 行
+                "column": 9// 列
             },
-            {
-                "name": "Nomadic tribe Complete",// 游牧部落完成
-                "uniques": [
-                "Comment [It's impossible to open everything]",//不可能全部打开的
-            ]// 独特属性
-            }
-        ],
-    },
 
-    
-     {
-        "name": "Trade development",//贸易发展
-        "era": "Stone Age",// 时代
-        "priorities": {
-            "Neutral": 5,
-            "Cultural": 5,
-            "Diplomatic": 10,
-            "Domination": 5,
-            "Scientific": 5
-        },// 优先级
-        "uniques": [
-            "Free Social Policy"
-        ],// 独特属性
-        "policies": [// 政策
-                      {
-                "name": "Trade market",//贸易集市
+             {
+                "name": "Trade development",//贸易发展
                 "uniques": [
                  "Comment [Unlocks [Trading post]]",
                 ],// 独特属性
                 "row": 1,// 行
-                "column": 1// 列
+                "column": 11// 列
             },
              {
-                "name": "Cancel Trade market",//取消贸易集市
+                "name": "Cancel Trade development",//取消贸易发展
                 "uniques": [
-                "Remove [Trade market] and refund [50]% of its cost",
-                "Remove [Cancel Trade market] and refund [100]% of its cost",
+                "Remove [Trade development] and refund [50]% of its cost",
+                "Remove [Cancel Trade development] and refund [100]% of its cost",
                 "Unavailable <for [AI player] Civilizations>"
                 ],// 
-                "requires": ["Trade market"],//前置政策
+                "requires": ["Trade development"],//前置政策
                 "row": 2,// 行
-                "column": 1// 列
+                "column": 11// 列
             },
+
             {
-                "name": "Trade development Complete",// 贸易发展完成
-                "uniques": [
-                "Comment [It's impossible to open everything]",//不可能全部打开的
-            ]// 独特属性
-            }
-        ],
-    },
-
-
-
-    {
-        "name": "Sacrificial development",//祭祀发展
-        "era": "Stone Age",// 时代
-        "priorities": {
-            "Neutral": 5,
-            "Cultural": 10,
-            "Diplomatic": 5,
-            "Domination": 5,
-            "Scientific": 5
-        },// 优先级
-        "uniques": [
-            "Free Social Policy"
-        ],// 独特属性
-        "policies": [// 政策
-                      {
-                "name": "Worship",//祭拜
+                "name": "Sacrificial",//祭祀
                 "uniques": [
                  "Comment [Unlocks [Altar]]",
+                 "Comment [Unlocks [Totem pole]]"
                 ],// 独特属性
                 "row": 1,// 行
-                "column": 1// 列
+                "column": 13// 列
             },
              {
-                "name": "Cancel Worship",//取消祭拜
+                "name": "Cancel Sacrificial",//取消祭祀
                 "uniques": [
-                "Remove [Worship] and refund [50]% of its cost",
-                "Remove [Cancel Worship] and refund [100]% of its cost",
+                "Remove [Sacrificial] and refund [50]% of its cost",
+                "Remove [Cancel Sacrificial] and refund [100]% of its cost",
                 "Unavailable <for [AI player] Civilizations>"
                 ],// 
-                "requires": ["Worship"],//前置政策
+                "requires": ["Sacrificial"],//前置政策
                 "row": 2,// 行
-                "column": 1// 列
+                "column": 13// 列
             },
             {
                 "name": "Sacrificial ceremony",//献祭仪式
                 "uniques": [
                  "Comment [Unlocks [Sacrifice]]",
                 ],// 独特属性
-                "row": 1,// 行
-                "column": 3// 列
+                "requires": ["Sacrificial"],//前置政策
+                "row": 2,// 行
+                "column": 15// 列
             },
              {
                 "name": "Cancel Sacrificial ceremony",//取消献祭仪式
@@ -217,11 +192,13 @@
                 "Unavailable <for [AI player] Civilizations>"
                 ],// 
                 "requires": ["Sacrificial ceremony"],//前置政策
-                "row": 2,// 行
-                "column": 3// 列
+                "row": 3,// 行
+                "column": 15// 列
             },
-             {
-                "name": "Sacrificial development Complete",// 祭祀发展完成
+
+
+            {
+                "name": "Policys Complete",//政策完成
                 "uniques": [
                 "Comment [It's impossible to open everything]",//不可能全部打开的
             ]// 独特属性
