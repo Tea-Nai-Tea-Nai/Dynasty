@@ -8,7 +8,7 @@
 		"unitSupplyBase": 0,//初始单位补给
 		"unitSupplyPerCity": 0,//每座城市提供的单位补给
 		"buildingCostModifier": 1,//建筑需要的产能修正
-		"policyCostModifier": 1,//所需的政策花费修正
+		"policyCostModifier": 0.5,//所需的政策花费修正
 		"unhappinessModifier": 1,//不满修正
 		"barbarianBonus": 0,//攻击蛮族加强
 		"barbarianSpawnDelay": 0,//延迟蛮族生成回合

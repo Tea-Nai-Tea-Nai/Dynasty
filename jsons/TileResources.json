@@ -508,7 +508,26 @@
 					"Doesn't generate naturally <in [{Tundra} {Forest}] tiles>"]//独特属性
 	},
 
-
+    //更新资源
+	{
+		"name": "Soil",//泥土
+		"resourceType": "Bonus",//资源类型
+		"terrainsCanBeFoundOn": ["Hill","River","Plains"],//生成地区
+		//"food": 1,
+		//"improvement": "Farm",//改良方式
+		//"improvementStats": {"food": 1},//改良后属性
+		"uniques": ["Generated on every [27] tiles <in [{Plains} {Fresh Water}] tiles> <in [River] tiles>",
+		            "Doesn't generate naturally <in [{Grassland} {Hill}] tiles>",
+					"Doesn't generate naturally <in [{Desert} {Hill}] tiles>",
+					"Doesn't generate naturally <in [{Tundra} {Hill}] tiles>",
+					"Doesn't generate naturally <in [{Featureless} {Plains}] tiles>",
+					"Generated on every [10] tiles <in [{Plains} {Fresh Water}] tiles> <in [River] tiles> <in [Hill] Regions>"]//独特属性
+	},
+	{
+		"name": "Ceramic products",//陶制品
+		"resourceType": "Luxury",//资源类型
+		"uniques": ["Doesn't generate naturally"]//独特属性
+	},
 
 
 

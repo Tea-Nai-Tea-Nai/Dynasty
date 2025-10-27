@@ -6,14 +6,7 @@ filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
 BuildingIcons/Adult
   rotate: false
-  xy: 1581, 933
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-BuildingIcons/Allow adult mode play
-  rotate: false
-  xy: 1581, 933
+  xy: 541, 277
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
@@ -34,16 +27,30 @@ ImprovementIcons/Mural
   index: -1
 ImprovementIcons/Thatched Cottage
   rotate: false
-  xy: 677, 445
+  xy: 1581, 829
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 ResourceIcons/Adult-resourc
   rotate: false
-  xy: 541, 277
+  xy: 677, 413
   size: 64, 64
   orig: 64, 64
+  offset: 0, 0
+  index: -1
+ResourceIcons/Soil
+  rotate: false
+  xy: 1717, 981
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Soil
+  rotate: false
+  xy: 1717, 981
+  size: 16, 16
+  orig: 16, 16
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Catgirl
@@ -53,9 +60,16 @@ TileSets/AbsoluteUnits/Units/Catgirl
   orig: 529, 885
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Rivers
+TileSets/HexaRealm/Tiles/Cherry blossom forest
   rotate: false
   xy: 541, 349
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Rivers
+  rotate: false
+  xy: 1581, 869
   size: 128, 128
   orig: 128, 128
   offset: 0, 0

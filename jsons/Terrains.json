@@ -51,7 +51,7 @@
 		"movementCost": 1,
 		"RGB": [153, 180, 51],
 		"uniques": [
-			"[+1 Food]<in tiles adjacent to [Fresh water] tiles>",
+			"[+1 Food] <in tiles adjacent to [Fresh water] tiles>",
 			"Occurs at temperature between [-0.4] and [-0.1] and humidity between [0] and [0.2]",
             "Occurs at temperature between [-0.4] and [0.4] and humidity between [0.4] and [0.6]",
             "Occurs at temperature between [0.4] and [0.5] and humidity between [0.5] and [0.6]",
@@ -190,14 +190,14 @@
 	{
 		"name": "Forest",//森林
 		"type": "TerrainFeature",
-		"production": 1,
+		//"production": 1,
 		"movementCost": 2,
 		//"overrideStats": true,
 		"unbuildable": true,
 		"defenceBonus": 0.25,
 		"occursOn": ["Tundra","Plains","Grassland","Hill"],
 		"uniques": ["Rough terrain", "Vegetation",
-					"Provides a one-time bonus of [+30 Production] to the closest city when cut down <(modified by game speed)>",
+					"Provides a one-time bonus of [+10 Production] to the closest city when cut down",
 					"Blocks line-of-sight from tiles at same elevation",
 					"[25]% Chance to be destroyed by nukes",
 					"A Region is formed with at least [30]% [Forest] tiles, with priority [3]",
@@ -213,14 +213,16 @@
 	{
 		"name": "Jungle",//丛林
 		"type": "TerrainFeature",
-		"food": 1,
+		//"food": 1,
 		"movementCost": 2,
 		//"overrideStats": true,
 		"unbuildable": true,
 		"defenceBonus": 0.25,
 		"occursOn": ["Plains","Grassland"],
 		"uniques": [
-			"Rough terrain", "Vegetation",
+			"Rough terrain", 
+			"Vegetation",
+			"Provides a one-time bonus of [+10 Production] to the closest city when cut down",
 			"Blocks line-of-sight from tiles at same elevation",
 			"[25]% Chance to be destroyed by nukes",
 			"[-1] to Fertility for Map Generation",
@@ -334,6 +336,7 @@
             {"text": "Amphibious", "link":"Promotion/Amphibious"}
         ]
     },
+	//更新的地形
 	 {
 		"name": "Rivers",//江河
 		"type": "Water",
@@ -347,5 +350,30 @@
 					"Considered [Food] when determining start locations",
 					"Considered [Desirable] when determining start locations",
 				]
+	},
+	{
+		"name": "Cherry blossom forest",//樱花林
+		"type": "TerrainFeature",
+		//"production": 1,
+		"movementCost": 2,
+		//"overrideStats": true,
+		"unbuildable": true,
+		"defenceBonus": 0.25,
+		"occursOn": ["Plains","Grassland","Hill"],
+		"uniques": ["Rough terrain", 
+		            "Vegetation",
+					"Provides a one-time bonus of [+10 Production] to the closest city when cut down",
+					"Blocks line-of-sight from tiles at same elevation",
+					"[25]% Chance to be destroyed by nukes",
+					"A Region is formed with at least [70]% [Cherry blossom forest] tiles, with priority [3]",
+					"A Region is formed with at least [10]% [Forest] tiles and [Jungle] tiles, with priority [2]",
+					"A Region can not contain more [Cherry blossom forest] tiles than [Forest] tiles",
+					"A Region can not contain more [Cherry blossom forest] tiles than [Jungle] tiles",
+					"Considered [Desirable] when determining start locations",
+					"Considered [Production] when determining start locations",
+					"Considered [Food] when determining start locations <in [Forest] Regions>",
+					"Considered [Food] when determining start locations <in [Tundra] Regions>",
+					"Considered [Food] when determining start locations <in [Cherry blossom forest] Regions>",
+					"Every [39] tiles with this terrain will receive a major deposit of a strategic resource."],
 	},
 ]

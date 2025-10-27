@@ -5,13 +5,14 @@
 		"turnsToBuild": 3,//构建时间
 		"techRequired": "Technology2",//所需科技
 		"uniques": [
-		"[+2 Food] <for [AI player] Civilizations>",
+		"[+1 Food] <for [AI player] Civilizations>",
 		"Cannot be built on [Water] tiles", 
 		"Can be built just outside your borders",
 		"Cannot be built on [Hill] tiles",
 		"Cannot be built on [Mountain] tiles",
 		"Gain control over [Land] tiles in a [0]-tile radius",
-		"Pillaging this improvement yields approximately [+30 Gold]"
+		"'House'",
+		"Pillaging this improvement yields approximately [+20 Gold]"
 		]//能力
 	},
 	{
@@ -21,16 +22,18 @@
 		//"techRequired": "Technology5",//所需科技
 		"uniques": [//"Can also be built on tiles adjacent to fresh water",
 		    //"Cannot be built on [Hills] tiles",
+			"[+1 Food] <for [AI player] Civilizations>",
 			"Improves [Wheat] resource in this tile",
 			"[+1 Food] from [Wheat] tiles",
 			"[+1 Food] from [River] tiles",
 			"[+1 Food] <with [1] to [3] neighboring [Thatched Cottage] tiles>",
 			"[+1 Food] <with [4] to [6] neighboring [Thatched Cottage] tiles>",
 			"[+1 Food] <with [1] to [6] neighboring [Rivers] tiles>",
-			"[+1 Food] <with [2] to [4] neighboring [Farm] tiles>",
+			"[+1 Food] <with [1] to [2] neighboring [Farm] tiles>",
+			"[+1 Food] <with [1] to [2] neighboring [Farm] tiles>",
 			"[+1 Food] <with [5] to [6] neighboring [Farm] tiles>",
 			"Only available <after adopting [Cultivate]>",
-			"Pillaging this improvement yields approximately [+20 Gold]"
+			"Pillaging this improvement yields approximately [+15 Gold]"
 			],//能力
 	},
     {
@@ -50,30 +53,46 @@
 		//"[+1 Production] from [Silver] tiles",
 		"[+1 Production] <with [1] to [3] neighboring [Thatched Cottage] tiles>",
 		"[+1 Production] <with [4] to [6] neighboring [Thatched Cottage] tiles>",
-		"Pillaging this improvement yields approximately [+20 Gold]"
+		"Pillaging this improvement yields approximately [+15 Gold]"
 	]
 	},
 	{
 		"name": "Camp",//猎场
+		"terrainsCanBeBuiltOn": ["Land"],//可建造地形
 		"turnsToBuild": 3,//构建时间
 		"techRequired": "Technology7",//所需科技
-		"terrainsCanBeBuiltOn": ["Land"],//可建造地形
 		"uniques": [
-		"[+1 Food, +1 Gold] <for [AI player] Civilizations>",	
+		"[+1 Food] <for [AI player] Civilizations>",	
 		"Cannot be built on [Mountain] tiles",
 		"Improves [Deer] resource in this tile",
 		//"Does not need removal of [Forest]",
 		//"Does not need removal of [Jungle]", 
-		"[+1 Production] <with [1] to [6] neighboring [Thatched Cottage] tiles>",
+		"[+1 Production] <when adjacent to a [Thatched Cottage] unit>",
 		"Provides [1] [Camp-help]",
 		//"Can only be built to improve a resource", 
-		"Pillaging this improvement yields approximately [+40 Gold]"
+		"Pillaging this improvement yields approximately [+10 Gold]"
 	],
 	},
 	{
+		"name": "Pasture",//牧场
+		"turnsToBuild": 3,//构建时间
+		"techRequired": "Technology5",//所需科技
+		//"techRequired": "Animal Husbandry",
+		"uniques": [
+		"[+1 Food] <for [AI player] Civilizations>",
+		"[+1 Food] <with [1] to [3] neighboring [Thatched Cottage] tiles>",
+		"[+1 Production] <with [4] to [6] neighboring [Thatched Cottage] tiles>",
+		 "Can only be built to improve a resource", 
+		 "Improves [Deer] resource in this tile",
+		 "Improves [Horses] resource in this tile",
+		 "Pillaging this improvement yields approximately [+15 Gold]"
+		]
+	},
+	{
 		"name": "Fishing Boats",//渔船
-		"turnsToBuild": 3,  // Allows this to be constructed for city-states
-		"terrainsCanBeBuiltOn": ["Ocean","Coast"],//可建造地形
+		//"terrainsCanBeBuiltOn": ["Ocean","Coast"],//可建造地形
+		"food": 1,//食物
+		"turnsToBuild": 3,  //构建时间
 		"techRequired": "Technology8",
 		"uniques": [
 		"Can only be built to improve a resource",
@@ -154,7 +173,7 @@
 		"[+1 Food] <with [4] to [6] neighboring [Port] tiles>",
 		"[+1 Food] <with [1] to [3] neighboring [Thatched Cottage] tiles>",
 		"[+1 Production] <with [4] to [6] neighboring [Thatched Cottage] tiles>",
-		"Must be next to [Thatched Cottage]",
+		"Must be next to ['House']",
 		"Pillaging this improvement yields approximately [+40 Gold]"
 		]//能力
 	},
@@ -194,7 +213,24 @@
 		"Pillaging this improvement yields approximately [+50 Gold]"
 	]
 	},
-
+    {
+		"name": "Tao kiln",//陶窑
+		"terrainsCanBeBuiltOn": ["Plains","Hill"],//可建造地形
+		"turnsToBuild": 3,//构建时间
+		//"techRequired": "Technology5",//所需科技
+		"uniques": [//"Can also be built on tiles adjacent to fresh water",
+		    //"Cannot be built on [Hills] tiles",
+			//"[+1 Food] <for [AI player] Civilizations>",
+			"Can only be built to improve a resource",
+			"Improves [Soil] resource in this tile",
+			 "Provides [+1] [Ceramic products]",
+			"[+1 Production] from [Soil] tiles <in [River] tiles>",
+			"[+1 Production] from [Soil] tiles <with [2] to [4] neighboring [Thatched Cottage] tiles>",
+			"[+1 Production] from [Soil] tiles <with [5] to [6] neighboring [Thatched Cottage] tiles>",
+			"Only available <after adopting [Ceramic Craftsmanship]>",
+			"Pillaging this improvement yields approximately [+20 Gold]"
+			],//能力
+	},
 
 	{
 		"name": "Capital",//首都
@@ -225,6 +261,7 @@
 		"[+1 Food] <with [5] to [6] neighboring [Fishing Boats] tiles>",
 		"Will not be replaced by automated units",
 		//"Limited to [1] per Civilization",
+		"'House'",
 		"Pillaging this improvement yields approximately [+100 Gold]"
 	],
 	},
@@ -273,16 +310,78 @@
 	{
 		"name": "City center",//省份中心
 		"terrainsCanBeBuiltOn": ["Land"],
-		"uniques": ["Ensures a minimum tile yield of [+2 Food, +1 Production]",
+		"uniques": [
+			"Ensures a minimum tile yield of [+2 Food, +1 Production]",
             "Unpillagable", 
 			"Irremovable", 
 			"Unbuildable", 
+			"'House'",
 			"Excluded from map editor"
 		],
         "civilopediaText": [
 			{"text":"Marks the center of a city"},
 			{"text":"Appearance changes with the technological era of the owning civilization"}
 		]
+	},
+	{
+		"name": "Planting Forest",//种植森林
+		"turnsToBuild": 10,
+		"terrainsCanBeBuiltOn": ["Tundra","Plains","Grassland","Hill"],
+		//"techRequired": "Mining",
+		"uniques": ["Can be built outside your borders", 
+		            "Excluded from map editor",
+				    "Turn this tile into a [Forest] tile"
+				],
+		"shortcutKey": "X",
+        "civilopediaText": [{"text":"Can be planted Forest"}]
+	},
+	{
+		"name": "Planting Jungle",//种植丛林
+		"turnsToBuild": 10,
+		"terrainsCanBeBuiltOn": ["Tundra","Plains","Grassland","Hill"],
+		//"techRequired": "Mining",
+		"uniques": ["Can be built outside your borders", 
+		            "Excluded from map editor",
+				    "Turn this tile into a [Jungle] tile"
+				],
+		"shortcutKey": "X",
+        "civilopediaText": [{"text":"Can be planted Jungle"}]
+	},
+	{
+		"name": "Planting Cherry blossom forest",//种植樱花林
+		"turnsToBuild": 10,
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Hill"],
+		//"techRequired": "Mining",
+		"uniques": ["Can be built outside your borders", 
+		            "Excluded from map editor",
+				    "Turn this tile into a [Cherry blossom forest] tile"
+				],
+		"shortcutKey": "X",
+        "civilopediaText": [{"text":"Can be planted Cherry blossom forest"}]
+	},
+	{
+		"name": "Remove Forest",//移除森林
+		"turnsToBuild": 1,
+		//"techRequired": "Mining",
+		"uniques": ["Can be built outside your borders", "Excluded from map editor"],
+		"shortcutKey": "X",
+        "civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
+	},
+	{
+		"name": "Remove Jungle",//移除丛林
+		"turnsToBuild": 1,
+		//"techRequired": "Bronze Working",
+		"uniques": ["Can be built outside your borders", "Excluded from map editor"],
+		"shortcutKey": "X",
+		"civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
+	},
+	{
+		"name": "Remove Cherry blossom forest",//移除樱花林
+		"turnsToBuild": 1,
+		//"techRequired": "Bronze Working",
+		"uniques": ["Can be built outside your borders", "Excluded from map editor"],
+		"shortcutKey": "X",
+		"civilopediaText": [{"text":"Provides a one-time Production bonus depending on distance to the closest city once finished"}]
 	},
 	{
 		"name": "Cancel improvement order",//取消改善命令
