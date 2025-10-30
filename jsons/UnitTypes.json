@@ -1,21 +1,22 @@
 [
     {
         "name": "Civilian",//平民
-        "movementType": "Land"
+        "movementType": "Land",
         "uniques": [
         ]
     },
     {
         "name": "Civilian-Water",//水上平民
-        "movementType": "Water"
+        "movementType": "Water",
         "uniques": [
         ]
     },
      {
         "name": "Sword",//近战
-        "movementType": "Land"
+        "movementType": "Land",
         "uniques": [
-        ]
+        "Can build [Observation point] improvements on tiles"
+]
     },
     
 

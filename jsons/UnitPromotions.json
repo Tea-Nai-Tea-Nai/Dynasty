@@ -23,4 +23,27 @@
         "row": 1,//行
         "column": 0//列
     },
+	 {
+		"name": "Overlook",//瞭望
+		"uniques": [
+		"[+1] Sight <in [Observation point] tiles>",
+		"Invisible to non-adjacent units <in [Observation point] tiles>",
+		"Doing so will consume this opportunity to choose a Promotion <in tiles without [Camp]>"
+		],
+		"innerColor": [195,53,43],
+		"outerColor": [253,236,234],
+        //"row": 1,//行
+        //"column": 0//列
+    },
+	 {
+		"name": "Training1",//训练1
+		"uniques": [
+		"[This Unit] gains [1] XP <every [2] turns> <in [Camp] tiles> <upon ending a turn in a [Camp] tile>",
+		"Doing so will consume this opportunity to choose a Promotion <in tiles without [Camp]>"
+		],
+		"innerColor": [195,53,43],
+		"outerColor": [253,236,234],
+        //"row": 1,//行
+        //"column": 0//列
+    },
     ]

@@ -559,8 +559,9 @@
 	},
 
 
+
 	{
-		"name": "Capital-resource",//首都资源
+		"name": "Clan Council-resource",//氏族议会资源
 		"resourceType": "Strategic",//资源类型
 		"uniques": [
 			"City-level resource",
@@ -568,14 +569,7 @@
 					],//独特属性
 	},
 	{
-		"name": "Capital-resource1",//首都资源
-		"resourceType": "Strategic",//资源类型
-		"uniques": [
-			"Not shown on world screen"
-					],//独特属性
-	},
-	{
-		"name": "Clan Council-resource",//氏族议会资源
+		"name": "Clan Council-resource1",//首都资源
 		"resourceType": "Strategic",//资源类型
 		"uniques": [
 			"Not shown on world screen"

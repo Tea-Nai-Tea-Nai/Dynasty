@@ -23,7 +23,7 @@
 
 
     /*******************************建筑**************************/
-	{
+	/*{
 		"name": "Capitals", //首都
 		"cost": 30, //建造费用
 		"uniques": [
@@ -51,7 +51,38 @@
 			"Provides [+1] [Capital-resource1]",
 			"Limited to [1] per Civilization"
 		]
+	},*/
+
+    {
+		"name": "Clan Councils", //氏族议会
+		"cost": 30, //建造费用
+		"uniques": [
+			//"Unsellable",
+			"Indicates the capital city",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Clan Council-resource]",
+			//"Consumes [1] [Capital-resource1]",
+			"Unbuildable <when below [0] [Clan Council-resource]>",
+			"Remove [Clan Councils] [in this city] <when below [0] [Clan Council-resource]>",
+			"Can only be built <within [3] tiles of a [Clan Council]> <when above [0] [Clan Council-resource]>",
+			//"Automatically built in all cities where it is buildable <within [3] tiles of a [Capital]> <when above [0] [Capital-resource]> <for [AI player] Civilizations>",
+		]
 	},
+     {
+		"name": "Clan Councils-assist", //首都辅助
+		"cost": 0, //建造费用
+		"uniques": [
+			"Unsellable",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"Automatically built in all cities where it is buildable",
+			//"Instantly provides [1] [Capital-resource1]",
+			"Provides [+1] [Clan Council-resource1]",
+			"Limited to [1] per Civilization"
+		]
+	},
+
 	{
 		"name": "Assist", //辅助
 		"cost": 0, //建造费用

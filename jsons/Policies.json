@@ -93,6 +93,26 @@
                 "column": 1// 列
             },
             
+             {
+                "name": "Yougeng Tribe",//游耕部落
+                "uniques": [
+                 //"Comment [Unlocks [Farm]]",
+                ],// 独特属性
+                "requires": ["Settlement Tribe","Nomadic tribe"],//定居部落
+                "row": 2,// 行
+                "column": 7// 列
+            }, 
+            {
+                "name": "Cancel Yougeng Tribe",//取消游耕部落
+                "uniques": [
+                "Remove [Yougeng Tribe] and refund [50]% of its cost",
+                "Remove [Cancel Yougeng Tribe] and refund [100]% of its cost",
+                "Unavailable <for [AI player] Civilizations>"
+                ],// 
+                "requires": ["Yougeng Tribe"],//前置政策
+                "row": 3,// 行
+                "column": 7// 列
+            },
             
             {
                 "name": "Nomadic tribe",//游牧部落
@@ -101,7 +121,7 @@
                   "[+1 Food] from [Grassland] tiles [in your cities]"
                 ],// 独特属性
                 "row": 1,// 行
-                "column": 7// 列
+                "column": 9// 列
             }, 
             {
                 "name": "Cancel Nomadic tribe",//取消游牧部落
@@ -112,7 +132,7 @@
                 ],// 
                 "requires": ["Nomadic tribe"],//游牧部落
                 "row": 2,// 行
-                "column": 7// 列
+                "column": 9// 列
             },
              {
                 "name": "Grazing",//放牧
@@ -121,7 +141,7 @@
                 ],// 独特属性
                 "requires": ["Nomadic tribe"],//游牧部落
                 "row": 2,// 行
-                "column": 9// 列
+                "column": 11// 列
             },
              {
                 "name": "Cancel Grazingp",//取消放牧
@@ -132,7 +152,7 @@
                 ],// 
                 "requires": ["Grazing"],//前置政策
                 "row": 3,// 行
-                "column": 9// 列
+                "column": 11// 列
             },
 
              {
@@ -141,7 +161,7 @@
                  "Comment [Unlocks [Trading post]]",
                 ],// 独特属性
                 "row": 1,// 行
-                "column": 11// 列
+                "column": 13// 列
             },
              {
                 "name": "Cancel Trade development",//取消贸易发展
@@ -152,7 +172,7 @@
                 ],// 
                 "requires": ["Trade development"],//前置政策
                 "row": 2,// 行
-                "column": 11// 列
+                "column": 13// 列
             },
 
             {
@@ -162,7 +182,7 @@
                  "Comment [Unlocks [Totem pole]]"
                 ],// 独特属性
                 "row": 1,// 行
-                "column": 13// 列
+                "column": 15// 列
             },
              {
                 "name": "Cancel Sacrificial",//取消祭祀
@@ -173,7 +193,7 @@
                 ],// 
                 "requires": ["Sacrificial"],//前置政策
                 "row": 2,// 行
-                "column": 13// 列
+                "column": 15// 列
             },
             {
                 "name": "Sacrificial ceremony",//献祭仪式
@@ -182,7 +202,7 @@
                 ],// 独特属性
                 "requires": ["Sacrificial"],//前置政策
                 "row": 2,// 行
-                "column": 15// 列
+                "column": 17// 列
             },
              {
                 "name": "Cancel Sacrificial ceremony",//取消献祭仪式
@@ -193,7 +213,7 @@
                 ],// 
                 "requires": ["Sacrificial ceremony"],//前置政策
                 "row": 3,// 行
-                "column": 15// 列
+                "column": 17// 列
             },
 
 

@@ -114,7 +114,9 @@
 		"[-1] population [in this city]<before the [Bronze Age]>",
 		"Requires at least [2] population<before the [Bronze Age]>",
 		"Unbuildable <for [AI player] Civilizations>",
-		"[+1] population [in this city]<by consuming this unit>"
+		"[+1] population [in this city]<by consuming this unit>",
+		//"[This Unit] gains the [Overlook] promotion <upon ending a turn in a [Observation point] tile>",
+        //"[This Unit] gains the [Overlook-Cancel] promotion <upon entering a [non-[Observation point]] tile>"
 		],
 		"attackSound": "nonmetalhit",
         "civilopediaText": [
@@ -136,6 +138,8 @@
 		"Can only be built <within [3] tiles of a [Camp]>",
 		"Never appears as a Barbarian unit",
 		"Instantly gain [-1] [Recuperation]",
+		//"[This Unit] gains the [Overlook] promotion <upon ending a turn in a [Observation point] tile>",
+        //"[This Unit] gains the [Overlook-Cancel] promotion <upon entering a [non-[Observation point]] tile>",
 		"Instantly provides [+1] [Warrior-resource] <in [in this city] cities> <by consuming this unit>"
 		],
 		"attackSound": "nonmetalhit",

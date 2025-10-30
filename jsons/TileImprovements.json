@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Thatched Cottage",//茅草屋
-		"terrainsCanBeBuiltOn": ["Land"],//可建造地形
+		"terrainsCanBeBuiltOn": ["Plains","Grassland"],//可建造地形
 		"turnsToBuild": 3,//构建时间
 		"techRequired": "Technology2",//所需科技
 		"uniques": [
@@ -9,7 +9,6 @@
 		"Cannot be built on [Water] tiles", 
 		"Can be built just outside your borders",
 		"Cannot be built on [Hill] tiles",
-		"Cannot be built on [Mountain] tiles",
 		"Gain control over [Land] tiles in a [0]-tile radius",
 		"'House'",
 		"Pillaging this improvement yields approximately [+20 Gold]"
@@ -61,15 +60,16 @@
 		"name": "Camp",//猎场
 		"terrainsCanBeBuiltOn": ["Land"],//可建造地形
 		"turnsToBuild": 3,//构建时间
-		"techRequired": "Technology7",//所需科技
+		//"techRequired": "Technology7",//所需科技
 		"uniques": [
 		"[+1 Food] <for [AI player] Civilizations>",	
 		"Cannot be built on [Mountain] tiles",
 		"Improves [Deer] resource in this tile",
 		//"Does not need removal of [Forest]",
 		//"Does not need removal of [Jungle]", 
-		"[+1 Production] <when adjacent to a [Thatched Cottage] unit>",
+		"[+1 Production] <in tiles adjacent to [Thatched Cottage] tiles>",
 		"Provides [1] [Camp-help]",
+		"[Military] units gain the [Training1] promotion <in [Camp] tiles>",
 		//"Can only be built to improve a resource", 
 		"Pillaging this improvement yields approximately [+10 Gold]"
 	],
@@ -261,10 +261,45 @@
 		"Gives a defensive bonus of [25]%"],
 		
 	},
-
-
 	{
-		"name": "Capital",//首都
+		"name": "Observation point",//瞭望点
+		"terrainsCanBeBuiltOn": ["Hill"],//可建造地形
+		"turnsToBuild": 1,//构建时间
+		//"techRequired": "Technology2",//所需科技
+		"uniques": [
+		"Cannot be built on [Water] tiles", 
+		"Can be built outside your borders", 
+		"Does not need removal of ['woods']",
+		//"Grants [Overlook] ([comment]) to adjacent [Observation point] units for the rest of the game"
+        //"[This Unit] units gain the [Overlook] promotion <upon ending a turn in a [Observation point] tile>",
+        //"[This Unit] units gain the [Overlook-Cancel] promotion <upon entering a [non-[Observation point]] tile>"
+		//"[Military] units gain the [Overlook] promotion <upon entering a [Observation point] tile>"
+		"[Military] units gain the [Overlook] promotion <in [Observation point] tiles>",
+		//"[Military] loses the [Overlook] status <in tiles without [Observation point]>"
+		//"[Military] gain the [Overlook] status for [1] turn(s) <upon ending a turn in a [Observation point] tile>"
+		//"[Sword] gains the [Overlook] status for [1] turn(s) <within [1] tiles of a [Observation point]>"
+		]//能力
+	},
+	{
+		"name": "Garbage pit",//垃圾坑
+		"terrainsCanBeBuiltOn": ["Plains","Grassland"],//可建造地形
+		"turnsToBuild": 1,//构建时间
+		//"techRequired": "Technology2",//所需科技
+		"uniques": [
+		]//能力
+	},
+	{
+		"name": "Cemetery",//墓地
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra","Snow"],//可建造地形
+		"turnsToBuild": 1,//构建时间
+		//"techRequired": "Technology2",//所需科技
+		"uniques": [
+		]//能力
+	},
+
+    
+	{
+		"name": "Clan Council",//氏族议会
 		"terrainsCanBeBuiltOn": ["Land"],//可建造地形
 		"turnsToBuild": 3,//构建时间  
 		"food": 1,//食物
@@ -274,12 +309,12 @@
 		"science": 1,//科学
 		"uniques": [
 		//"[+1 Food, +1 Production, +1 Culture, +1 Gold] <for [AI player] Civilizations>",
-	    "Provides [+1] [Capital-resource]",
+	    //"Provides [+1] [Capital-resource]",
 		"Provides [+1] [Clan Council-resource]",
-		"Consumes [1] [Capital-resource1]",
-		"Only available <when above [0] [Capital-resource1]>",
-		"Unavailable <when below [0] [Capital-resource1]>",
-		"Unbuildable <when below [0] [Capital-resource1]>",
+		"Consumes [1] [Clan Council-resource1]",
+		"Only available <when above [0] [Clan Council-resource1]>",
+		"Unavailable <when below [0] [Clan Council-resource1]>",
+		"Unbuildable <when below [0] [Clan Council-resource1]>",
 		"Cannot be built on [Mountain] tiles",
 		"[+1 Food] <with [1] to [3] neighboring [Thatched Cottage] tiles>",
 		"[+1 Food] <with [4] to [5] neighboring [Thatched Cottage] tiles>",
@@ -297,30 +332,12 @@
 		"[+1 Food] <with [3] to [4] neighboring [Fishing Boats] tiles>",
 		"[+1 Food] <with [5] to [6] neighboring [Fishing Boats] tiles>",
 		"Will not be replaced by automated units",
+		//"Improves [All] resource in this tile",
 		//"Limited to [1] per Civilization",
-		"'Political center'",
 		"'Political center'",
 		"'House'",
 		"Pillaging this improvement yields approximately [+100 Gold]"
 	],
-	},
-	{
-		"name": "Clan Council",//氏族议会
-		"terrainsCanBeBuiltOn": ["Land"],//可建造地形
-		"turnsToBuild": 3,//构建时间
-		"science": 1,//科学
-		//"techRequired": "Technology10",//所需科技
-		"uniques": [
-		"Consumes [1] [Clan Council-resource]",
-		"Cannot be built on [Mountain] tiles",
-		"Must be next to ['Political center']",
-		"Only available <when above [0] [Clan Council-resource]>",
-		"Unavailable <when below [0] [Clan Council-resource]>",
-		"Unbuildable <when below [0] [Clan Council-resource]>",
-		"Cannot be built on [Mountain] tiles",
-		"Will not be replaced by automated units",
-		"Pillaging this improvement yields approximately [+40 Gold]"
-		]//能力
 	},
 
 
