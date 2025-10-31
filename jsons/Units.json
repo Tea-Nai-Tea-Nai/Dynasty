@@ -6,7 +6,7 @@
 		"name": "Settler-package",//定居者包
 		"unitType": "Civilian",
 		"movement": 1,
-		"cost": 100,
+		"cost": 50,
 		"uniques": [
 		"Gain [-50] [Gold] <before the [Iron Age]>",
 		"Gain [-10] [Gold] <before the [Electric Age]>",
@@ -27,7 +27,7 @@
 		"name": "Settler",//定居者
 		"unitType": "Civilian",
 		"movement": 2,
-		"cost": 20,
+		"cost": 10,
 		"uniques": [
 		"Founds a new city <by consuming this unit>",
         "[This Unit] takes [10] damage <upon turn end> <before the [Iron Age]>",
@@ -46,7 +46,7 @@
 		"name": "Worker-package",//工人包
 		"unitType": "Civilian",
 		"movement": 1,
-		"cost": 40,
+		"cost": 20,
 		"uniques": [
         "[5] free [Worker] units appear <by consuming this unit>",
 		"[-1] population [in this city] <before the [Bronze Age]>",
@@ -59,7 +59,7 @@
 		"name": "Worker",//工人
 		"unitType": "Civilian",
 		"movement": 1,
-		"cost": 8,
+		"cost": 4,
 		"uniques": [
 		"Can build [Land] improvements on tiles",
 		"Automation is a primary action",
@@ -74,7 +74,7 @@
 		"unitType": "Civilian-Water",
 		"requiredTech": "Technology8",
 		"movement": 1,
-		"cost": 40,
+		"cost": 20,
 		"uniques": [
         "[5] free [Worker] units appear <by consuming this unit>",
 		"[-1] population [in this city] <before the [Bronze Age]>",
@@ -88,7 +88,7 @@
 		"unitType": "Civilian-Water",
 		"requiredTech": "Technology8",
 		"movement": 1,
-		"cost": 8,
+		"cost": 4,
 		"uniques": [
 		"Can build [Water] improvements on tiles",
 		"Automation is a primary action",
@@ -104,8 +104,8 @@
 		"unitType": "Sword",
 		"movement": 1,
 		"strength": 1,
-		"cost": 50,
-		"requiredTech": "Technology7",
+		"cost": 25,
+		//"requiredTech": "Technology7",
 		//"obsoleteTech": "Metal Casting",//过时科技
 		//"upgradesTo": "Swordsman",//升级目标
 		"uniques" : [
@@ -126,9 +126,9 @@
 		"name": "Warrior",//勇士
 		"unitType": "Sword",
 		"movement": 1,
-		"strength": 8,
-		"cost": 10,
-		"requiredTech": "Technology7",
+		"strength": 3,
+		"cost": 5,
+		//"requiredTech": "Technology7",
 		//"obsoleteTech": "Metal Casting",
 		//"upgradesTo": "Swordsman",
 		"uniques" : [
@@ -150,9 +150,9 @@
 		"name": "Warrior1",//勇士
 		"unitType": "Sword",
 		"movement": 1,
-		"strength": 8,
+		"strength": 3,
 		"cost": 0,
-		"requiredTech": "Technology7",
+		//"requiredTech": "Technology7",
 		//"obsoleteTech": "Metal Casting",
 		//"upgradesTo": "Swordsman",
 		"uniques" : [
@@ -168,7 +168,128 @@
 		]
 	},
     
-
+	{
+		"name": "Archer-package",//弓手包
+		"unitType": "Ranged",
+		"movement": 1,
+		"strength": 1,
+		"cost": 25,
+		//"requiredTech": "Technology7",
+		//"obsoleteTech": "Metal Casting",//过时科技
+		//"upgradesTo": "Swordsman",//升级目标
+		"uniques" : [
+		"[5] free [Archer] units appear <by consuming this unit>",
+		"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
+		"[-1] population [in this city] <before the [Bronze Age]>",
+		"Requires at least [2] population<before the [Bronze Age]>",
+		"Unbuildable <for [AI player] Civilizations>",
+		"[+1] population [in this city] <by consuming this unit>",
+		//"[This Unit] gains the [Overlook] promotion <upon ending a turn in a [Observation point] tile>",
+        //"[This Unit] gains the [Overlook-Cancel] promotion <upon entering a [non-[Observation point]] tile>"
+		],
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+		]
+	},
+	{
+		"name": "Archer",//弓手
+		"unitType": "Ranged",
+		"movement": 1,
+		"strength": 2,
+		"cost": 5,
+		//"requiredTech": "Technology7",
+		//"obsoleteTech": "Metal Casting",
+		//"upgradesTo": "Swordsman",
+		"uniques" : [
+		//"May upgrade to [Spearman] through ruins-like effects"
+		//"[This Unit] heals [5] HP<for [1] movement>"
+		//"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
+		"Can only be built <within [3] tiles of a [Camp]>",
+		"Never appears as a Barbarian unit",
+		"Instantly gain [-1] [Recuperation]",
+		//"[This Unit] gains the [Overlook] promotion <upon ending a turn in a [Observation point] tile>",
+        //"[This Unit] gains the [Overlook-Cancel] promotion <upon entering a [non-[Observation point]] tile>",
+		"Can carry [2] [Wooden Arrow] units",
+		"Instantly provides [+1] [Archer-resource] <in [in this city] cities> <by consuming this unit>"
+		],
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+		]
+	},
+	{
+		"name": "Archer1",//弓手
+		"unitType": "Sword",
+		"movement": 1,
+		"strength": 2,
+		"cost": 0,
+		//"requiredTech": "Technology7",
+		//"obsoleteTech": "Metal Casting",
+		//"upgradesTo": "Swordsman",
+		"uniques" : [
+		//"May upgrade to [Spearman] through ruins-like effects"
+		//"[This Unit] heals [5] HP<for [1] movement>"
+		"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
+		"Never appears as a Barbarian unit",
+		"Costs [1] [Archer-resource]",
+		"Can carry [5] [Wooden Arrow] units",
+		"Instantly provides [+1] [Archer-resource] <in [in this city] cities> <by consuming this unit>"
+		],
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+		]
+	},
+	{
+		"name": "Wooden Arrow-package",//木箭包
+		"unitType": "Arrow",
+		"movement": 1,
+		"strength": 1,
+		"rangedStrength": 1,
+		"range": 2,
+		"cost": 10,
+		//"requiredTech": "Technology7",
+		//"obsoleteTech": "Metal Casting",//过时科技
+		//"upgradesTo": "Swordsman",//升级目标
+		"uniques" : [
+		"[5] free [Wooden Arrow] units appear <by consuming this unit>",
+		//"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
+		//"[-1] population [in this city] <before the [Bronze Age]>",
+		//"Requires at least [2] population <before the [Bronze Age]>",
+		"Unbuildable <for [AI player] Civilizations>",
+		//"[+1] population [in this city] <by consuming this unit>",
+		"Cannot attack"
+		//"[This Unit] gains the [Overlook] promotion <upon ending a turn in a [Observation point] tile>",
+        //"[This Unit] gains the [Overlook-Cancel] promotion <upon entering a [non-[Observation point]] tile>"
+		],
+		"attackSound": "arrow",
+        "civilopediaText": [
+		]
+	},
+	{
+		"name": "Wooden Arrow",//木箭
+		"unitType": "Arrow",
+		"movement": 1,
+		"strength": 1,
+		"rangedStrength": 1,
+		"range": 2,
+		"cost": 2,
+		//"requiredTech": "Technology7",
+		//"obsoleteTech": "Metal Casting",
+		//"upgradesTo": "Swordsman",
+		"uniques" : [
+		//"May upgrade to [Spearman] through ruins-like effects"
+		//"[This Unit] heals [5] HP<for [1] movement>"
+		//"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
+		//"Can only be built <within [3] tiles of a [Camp]>",
+		"Never appears as a Barbarian unit",
+		//"Instantly gain [-1] [Recuperation]",
+		//"[This Unit] gains the [Overlook] promotion <upon ending a turn in a [Observation point] tile>",
+        //"[This Unit] gains the [Overlook-Cancel] promotion <upon entering a [non-[Observation point]] tile>",
+		//"Instantly provides [+1] [Warrior-resource] <in [in this city] cities> <by consuming this unit>"
+		],
+		"attackSound": "arrow",
+        "civilopediaText": [
+		]
+	},
 
 
 

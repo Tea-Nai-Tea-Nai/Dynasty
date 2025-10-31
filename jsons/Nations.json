@@ -49,8 +49,8 @@
 		"neutralHello": "",//中立的贸易介绍
 		"hateHello": "",//敌对的贸易介绍
 		"tradeRequest": "",//贸易请求
-		"outerColor": [222, 41, 16],//外圈颜色
-		"innerColor": [155,16,3],//内圈颜色
+		"outerColor": [0, 100, 255],//外圈颜色
+		"innerColor": [255,255,255],//内圈颜色
 		//"favoredReligion": "",//偏向宗教
 		"uniqueName": "",//能力名字
 		"uniqueText": "",//介绍文本

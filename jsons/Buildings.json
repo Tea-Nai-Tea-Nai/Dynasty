@@ -92,6 +92,7 @@
 			"Cannot be purchased",
 			"Never destroyed when the city is captured",
 			"Automatically built in all cities where it is buildable",
+			//"Research [+100]% of [Technology2] <while researching [Technology2]> <for every [Collect-help]>",
 			"[+1 Culture] per [1] population [in this city]"
 		]
 	},
@@ -183,14 +184,25 @@
 		]
 	},
 	{
-		"name": "Conversion of population1", //人口转换1
+		"name": "Warrior-Conversion of population", //勇士-人口转换
 		"cost": 0, //建造费用
 		"uniques": [
 			"Instantly provides [1] [Recuperation]",
 			"Can only be built <when above [0] [Warrior-resource]>",
 			"Instantly consumes [1] [Warrior-resource]",
-			"Remove [Conversion of population1] [in this city]",
-			"Automatically built in all cities where it is buildable <after turn number [5]> <for [AI player] Civilizations>"
+			"Remove [Warrior-Conversion of population] [in this city]",
+			"Automatically built in all cities where it is buildable <when above [0] [Warrior-resource]> <for [AI player] Civilizations>"
+		]
+	},
+	{
+		"name": "Archer-Conversion of population", //勇士-人口转换
+		"cost": 0, //建造费用
+		"uniques": [
+			"Instantly provides [1] [Recuperation]",
+			"Can only be built <when above [0] [Archer-resource]>",
+			"Instantly consumes [1] [Archer-resource]",
+			"Remove [Archer-Conversion of population] [in this city]",
+			"Automatically built in all cities where it is buildable <when above [0] [Archer-resource]> <for [AI player] Civilizations>"
 		]
 	},
 	

@@ -18,6 +18,15 @@
         "Can build [Observation point] improvements on tiles"
 ]
     },
+    {
+        "name": "Ranged",//远战
+        "movementType": "Land"
+    },
+     {
+        "name": "Arrow",//箭矢
+        "movementType": "Air",
+        "uniques": []
+    },
     
 
 
@@ -35,10 +44,7 @@
         "uniques": [
         ]
     },
-    {
-        "name": "Ranged",//远战
-        "movementType": "Land"
-    },
+    
     {
         "name": "Ranged Gunpowder",//火器
         "movementType": "Land"

@@ -542,6 +542,14 @@
 					],//独特属性
 	},
 	{
+		"name": "Collect-help",//采集-帮助
+		"resourceType": "Strategic",//资源类型
+		"uniques": [
+			"City-level resource",
+			"[+100]% [Science] <while researching [Technology2]> <for every [Collect-help]>"
+					],//独特属性
+	},
+	{
 		"name": "Recuperation",//休整
 		"resourceType": "Strategic",//资源类型
 		"uniques": [
@@ -551,6 +559,14 @@
 	},
 	{
 		"name": "Warrior-resource",//勇士资源
+		"resourceType": "Strategic",//资源类型
+		"uniques": [
+			//"City-level resource",
+			"Stockpiled"
+					],//独特属性
+	},
+	{
+		"name": "Archer-resource",//勇士资源
 		"resourceType": "Strategic",//资源类型
 		"uniques": [
 			//"City-level resource",

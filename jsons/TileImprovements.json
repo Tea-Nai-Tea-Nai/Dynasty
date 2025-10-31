@@ -10,6 +10,7 @@
 		"Can be built just outside your borders",
 		"Cannot be built on [Hill] tiles",
 		"Gain control over [Land] tiles in a [0]-tile radius",
+		"Only available <after discovering [Technology2]>",
 		"'House'",
 		"Pillaging this improvement yields approximately [+20 Gold]"
 		]//能力
@@ -19,7 +20,7 @@
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Flood plains"],//可建造地形
 		"turnsToBuild": 3,//构建时间
 		"food": 1,//食物
-		//"techRequired": "Technology5",//所需科技
+		"techRequired": "Technology7",//所需科技
 		"uniques": [//"Can also be built on tiles adjacent to fresh water",
 		    //"Cannot be built on [Hills] tiles",
 			//"[+1 Food] <for [AI player] Civilizations>",
@@ -113,8 +114,9 @@
 		"terrainsCanBeBuiltOn": ["Hill"],//可建造地形
 		"turnsToBuild": 3,//构建时间
 		"culture": 1,//文化
-		"techRequired": "Technology9",//所需科技
+		"techRequired": "Technology4",//所需科技
 		"uniques": [
+		"[+1 Culture] <for [AI player] Civilizations>",
 		"[+1 Culture] <with [1] to [3] neighboring [Mural] tiles>",
 		"[+1 Culture] <with [4] to [6] neighboring [Mural] tiles>",
 		"[+1 Culture] <with [1] to [3] neighboring [Thatched Cottage] tiles>",
@@ -127,7 +129,7 @@
 		"terrainsCanBeBuiltOn": ["Land"],//可建造地形
 		"turnsToBuild": 3,//构建时间
 		"faith": 1,//信仰
-		//"techRequired": "Technology10",//所需科技
+		"techRequired": "Technology9",//所需科技
 		"uniques": [
 		"[+1 Culture] <with [1] to [3] neighboring [Totem pole] tiles>",
 		"[+1 Culture] <with [4] to [6] neighboring [Totem pole] tiles>",
@@ -140,7 +142,7 @@
 		//"Remove [Forest] improvements from this tile",
 		//"Remove [Jungle] improvements from this tile",
 		"Cannot be built on [Mountain] tiles",
-		"Only available <after adopting [Sacrificial]>",
+		//"Only available <after adopting [Sacrificial]>",
 		"Pillaging this improvement yields approximately [+30 Gold]"
 		]//能力
 	},
@@ -164,7 +166,7 @@
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains"],
 		"gold": 1,
 		"turnsToBuild": 3,
-		//"techRequired": "Technology11",
+		//"techRequired": "Technology2",//所需科技
 		"uniques": [
 		"[+2 Gold] <for [AI player] Civilizations>",
 		"[+1 Gold] <with [1] to [3] neighboring [Thatched Cottage] tiles>",
@@ -197,16 +199,19 @@
 	},
 	{
 		"name": "Collect",//采集
+		"terrainsCanBeBuiltOn": ["Land"],//可建造地形
+		//"techRequired": "Technology1",
 		"turnsToBuild": 3,
 		"food": 2,
-		"techRequired": "Technology12",
 		"uniques": [
-		"[+1 Food] <for [AI player] Civilizations>",
+		//"[+1 Food] <for [AI player] Civilizations>",
 		"[+1 Food] <with [1] to [3] neighboring [Collect] tiles>",
 		"[+2 Food] <with [4] to [6] neighboring [Collect] tiles>",
 		"[+1 Food] <with [1] to [3] neighboring [Thatched Cottage] tiles>",
 		"[+1 Food] <with [4] to [6] neighboring [Thatched Cottage] tiles>",
-		"Can only be built to improve a resource", 
+		"Can only be built to improve a resource",
+		"Improves [Bananas] resource in this tile",
+		"Provides [+1] [Collect-help]", 
 		"Pillaging this improvement yields approximately [+20 Gold]"
 	]
 	},
@@ -214,7 +219,7 @@
 		"name": "Granary",//粮仓
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Flood plains"],//可建造地形
 		"turnsToBuild": 3,
-		//"techRequired": "Technology13",
+		"techRequired": "Technology7",
 		"uniques": [
 		"[+1 Food] <for [AI player] Civilizations>",
 		"[+1 Food] <with [1] to [3] neighboring [Farm] tiles>",
@@ -270,6 +275,7 @@
 		"Cannot be built on [Water] tiles", 
 		"Can be built outside your borders", 
 		"Does not need removal of ['woods']",
+		"Unbuildable <for [Worker] units>"
 		//"Grants [Overlook] ([comment]) to adjacent [Observation point] units for the rest of the game"
         //"[This Unit] units gain the [Overlook] promotion <upon ending a turn in a [Observation point] tile>",
         //"[This Unit] units gain the [Overlook-Cancel] promotion <upon entering a [non-[Observation point]] tile>"
@@ -346,7 +352,9 @@
 		"terrainsCanBeBuiltOn": ["Land"],//可建造地形
 		"turnsToBuild": 7,//构建时间
 		"techRequired": "Technology3",//所需科技
-		"uniques": ["Can be built outside your borders", "Costs [1] [Gold] per turn"],//能力
+		"uniques": ["Can be built outside your borders", "Costs [1] [Gold] per turn",
+		            "Only available <after discovering [Technology3]>"
+					],//能力
 		"shortcutKey": "R",//快捷键
         "civilopediaText": [
             {"text":"Reduces movement cost to ½ if the other tile also has a Road or Railroad"},
@@ -358,8 +366,10 @@
 		"name": "Railroad",//铁路
 		"terrainsCanBeBuiltOn": ["Land"],//可建造地形
 		"turnsToBuild": 7,//构建时间
-		"techRequired": "Technology4",//所需科技
-		"uniques": ["Can be built outside your borders", "Costs [2] [Gold] per turn"],//能力
+		"techRequired": "Technology3",//所需科技
+		"uniques": ["Can be built outside your borders", "Costs [2] [Gold] per turn",
+		            "Only available <after discovering [Technology3]>"
+					  ],//能力
 		"shortcutKey": "R",//快捷键
         "civilopediaText": [
             {"text":"Reduces movement cost to ⅒ if the other tile also has a Railroad"},

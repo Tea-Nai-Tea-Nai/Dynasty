@@ -159,6 +159,7 @@
                 "name": "Trade development",//贸易发展
                 "uniques": [
                  "Comment [Unlocks [Trading post]]",
+                 "Unavailable <for [AI player] Civilizations>"
                 ],// 独特属性
                 "row": 1,// 行
                 "column": 13// 列
@@ -178,7 +179,7 @@
             {
                 "name": "Sacrificial",//祭祀
                 "uniques": [
-                 "Comment [Unlocks [Altar]]",
+                 //"Comment [Unlocks [Altar]]",
                  "Comment [Unlocks [Totem pole]]"
                 ],// 独特属性
                 "row": 1,// 行

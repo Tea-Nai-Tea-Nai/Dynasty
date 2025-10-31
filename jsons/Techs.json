@@ -16,14 +16,19 @@ Electric Age = 电器时代
 				"row": 1,//上下行
 				"cost": 10,//科研点
 				"quote": "",//文本
-				"uniques": ["Starting tech"]//能力
+				"uniques": ["Starting tech <hidden from users>",
+				            "[+10]% [Science] <while researching [Technology7]> <for every [Collect-help]> <hidden from users>"
+							//"[relativeAmount]% of [Technology2] <while researching [Technology2]> <for every [Collect-help]>"
+							]//能力
 			},
 			{
 				"name": "Technology2",//科技2
 				"row": 2,//上下行
 				"cost": 10,//科研点
 				"quote": "",//文本
-				"uniques": [""]//能力
+				"uniques": [
+
+				]//能力
 			},
 			{
 				"name": "Technology3",//科技3
@@ -65,14 +70,16 @@ Electric Age = 电器时代
 			{
 				"name": "Technology7",//科技7
 				"row": 1,//上下行
-				"cost": 20,//科研点
+				"cost": 15,//科研点
 				"quote": "",//文本
-				"uniques": ["[100]% weight to this choice for AI decisions"]//能力
+				"uniques": ["[100]% weight to this choice for AI decisions",
+				            "Adopt [Grain storage] <for [AI player] Civilizations>"
+							]//能力
 			},
 			{
 				"name": "Technology8",//科技8
 				"row": 2,//上下行
-				"cost": 20,//科研点
+				"cost": 15,//科研点
 				"quote": "",//文本
 				"uniques": [""]//能力
 			},
@@ -86,21 +93,21 @@ Electric Age = 电器时代
 				{
 				"name": "Technology10",//科技10
 				"row": 4,//上下行
-				"cost": 20,//科研点
+				"cost": 15,//科研点
 				"quote": "",//文本
 				"uniques": [""]//能力
 			},
 			{
 				"name": "Technology11",//科技11
 				"row": 5,//上下行
-				"cost": 20,//科研点
+				"cost": 15,//科研点
 				"quote": "",//文本
 				"uniques": [""]//能力
 			},
 			{
 				"name": "Technology12",//科技12
 				"row": 6,//上下行
-				"cost": 20,//科研点
+				"cost": 15,//科研点
 				"quote": "",//文本
 				"uniques": [""]//能力
 			},
