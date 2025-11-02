@@ -1,14 +1,41 @@
-{"isBaseRuleset":true,"constants":{"maxXPfromBarbarians":10000,
-                                   "cityStrengthBase":3,
-                                   "cityStrengthPerPop":1,
-                                   "minimalCityDistance":1,
-                                   "baseCityBombardRange":2,
-                                   "cityWorkRange":20,
-                                   "cityExpandRange":100,
-                                   "riverCountMultiplier":0.05,
-                                   "religionLimitMultiplier":1},
-"modUrl":"https://github.com/Tea-Nai-Tea-Nai/Dynasty","defaultBranch":"main","author":"Tea-Nai-Tea-Nai","lastUpdated":"2025-10-23T14:53:37Z","modSize":260,"topics":["unciv-mod","unciv-mod-rulesets"],
-                      "uniques":["Can convert gold to science with sliders",
+{
+    "isBaseRuleset": true,
+            "constants":{
+            "maxXPfromBarbarians":10000,// 来自野蛮人的最大经验值
+             "cityStrengthBase":3,//城市基础强度
+             "cityStrengthPerPop":1,//每人口城市强度
+             "cityStrengthFromTechsMultiplier":1,//来自科技的城市强度乘数
+             "cityStrengthFromTechsExponent":1,//来自科技的城市强度指数
+             "cityStrengthFromTechsFullMultiplier":1,//来自科技的城市强度完全乘数
+             "cityStrengthFromGarrison":0.2,//来自驻军的城市强度
+             "unitSupplyPerPopulation":0.5,//城市中添加新人口的食物需要
+             "minimalCityDistanceOnDifferentContinents":1,//不同大陆上最小城市距离
+             "minimalCityDistance":1,//最小城市距离
+             "naturalWonderCountMultiplier":0.125,//自然奇观计数乘数
+             "naturalWonderCountAddedConstant":0.1,//自然奇观计数添加常数
+             "ancientRuinsCountMultiplier":0.05,//古代遗迹计数乘数
+             "maxLaKeSize":10,//最大湖泊大小
+             "minRiverLength":2,//最小河流长度
+             "maxRiverCount":666,//最大河流计数
+             "baseCityBombardRange":2,//基础城市轰炸范围
+             "cityWorkRange":20,//城市工作范围
+             "cityExpandRange":100,//城市扩展范围
+             "religionLimitBase":3,//宗教限制基础
+             "pantheonBase ":10,//开启万神殿需要
+             "pantheonGrowth ":5,//下次开启万神殿需要的增长
+             "riverCountMultiplier":0.05,//河流计数乘数
+             "religionLimitMultiplier":1//宗教限制乘数
+                                },
+             "modUrl":"https://github.com/Tea-Nai-Tea-Nai/Dynasty",
+             "defaultBranch":"main",
+             "author":"Tea-Nai-Tea-Nai",
+             "lastUpdated":"2025-10-23T14:53:37Z",
+             "modSize":260,
+             "topics":["unciv-mod","unciv-mod-rulesets"],
+             "uniques":["Can convert gold to science with sliders",
                       "Allow City States to spawn with additional units",
                       "Can trade civilization introductions for [10] Gold",
-                      "Allow raze capital","Allow raze holy city"]}
+                      "Allow raze capital","Allow raze holy city"
+                     ]
+            
+}

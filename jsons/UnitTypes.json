@@ -11,6 +11,12 @@
         "uniques": [
         ]
     },
+    {
+        "name": "Package",//包
+        "movementType": "Land",
+        "uniques": [
+        ]
+    },
      {
         "name": "Sword",//近战
         "movementType": "Land",
@@ -22,11 +28,20 @@
         "name": "Ranged",//远战
         "movementType": "Land"
     },
+    {
+        "name": "Cavalry",//骑兵
+        "movementType": "Land"
+    },
+    {
+        "name": "Archer",//弓手
+        "movementType": "Land"
+    },
      {
         "name": "Arrow",//箭矢
         "movementType": "Air",
         "uniques": []
     },
+    
     
 
 

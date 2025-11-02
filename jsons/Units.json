@@ -4,9 +4,9 @@
 
     {
 		"name": "Settler-package",//定居者包
-		"unitType": "Civilian",
+		"unitType": "Package",
 		"movement": 1,
-		"cost": 50,
+		"cost": 25,
 		"uniques": [
 		"Gain [-50] [Gold] <before the [Iron Age]>",
 		"Gain [-10] [Gold] <before the [Electric Age]>",
@@ -27,7 +27,7 @@
 		"name": "Settler",//定居者
 		"unitType": "Civilian",
 		"movement": 2,
-		"cost": 10,
+		"cost": 5,
 		"uniques": [
 		"Founds a new city <by consuming this unit>",
         "[This Unit] takes [10] damage <upon turn end> <before the [Iron Age]>",
@@ -44,9 +44,9 @@
 
 	{
 		"name": "Worker-package",//工人包
-		"unitType": "Civilian",
+		"unitType": "Package",
 		"movement": 1,
-		"cost": 20,
+		"cost": 10,
 		"uniques": [
         "[5] free [Worker] units appear <by consuming this unit>",
 		"[-1] population [in this city] <before the [Bronze Age]>",
@@ -59,7 +59,7 @@
 		"name": "Worker",//工人
 		"unitType": "Civilian",
 		"movement": 1,
-		"cost": 4,
+		"cost": 2,
 		"uniques": [
 		"Can build [Land] improvements on tiles",
 		"Automation is a primary action",
@@ -74,7 +74,7 @@
 		"unitType": "Civilian-Water",
 		"requiredTech": "Technology8",
 		"movement": 1,
-		"cost": 20,
+		"cost": 10,
 		"uniques": [
         "[5] free [Worker] units appear <by consuming this unit>",
 		"[-1] population [in this city] <before the [Bronze Age]>",
@@ -88,7 +88,7 @@
 		"unitType": "Civilian-Water",
 		"requiredTech": "Technology8",
 		"movement": 1,
-		"cost": 4,
+		"cost": 2,
 		"uniques": [
 		"Can build [Water] improvements on tiles",
 		"Automation is a primary action",
@@ -101,18 +101,18 @@
 
 	{
 		"name": "Warrior-package",//勇士包
-		"unitType": "Sword",
+		"unitType": "Package",
 		"movement": 1,
 		"strength": 1,
-		"cost": 25,
+		"cost": 13,
 		//"requiredTech": "Technology7",
 		//"obsoleteTech": "Metal Casting",//过时科技
 		//"upgradesTo": "Swordsman",//升级目标
 		"uniques" : [
 		"[5] free [Warrior] units appear <by consuming this unit>",
 		"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
-		"[-1] population [in this city]<before the [Bronze Age]>",
-		"Requires at least [2] population<before the [Bronze Age]>",
+		"[-1] population [in this city] <before the [Bronze Age]>",
+		"Requires at least [2] population <before the [Bronze Age]>",
 		"Unbuildable <for [AI player] Civilizations>",
 		"[+1] population [in this city]<by consuming this unit>",
 		//"[This Unit] gains the [Overlook] promotion <upon ending a turn in a [Observation point] tile>",
@@ -127,7 +127,7 @@
 		"unitType": "Sword",
 		"movement": 1,
 		"strength": 3,
-		"cost": 5,
+		"cost": 3,
 		//"requiredTech": "Technology7",
 		//"obsoleteTech": "Metal Casting",
 		//"upgradesTo": "Swordsman",
@@ -160,8 +160,10 @@
 		//"[This Unit] heals [5] HP<for [1] movement>"
 		"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
 		"Never appears as a Barbarian unit",
-		"Costs [1] [Warrior-resource]",
-		"Instantly provides [+1] [Warrior-resource] <in [in this city] cities> <by consuming this unit>"
+		//"Costs [1] [Warrior-resource]",
+		"Instantly consumes [+1] [Warrior-resource]",
+		"Instantly provides [+1] [Warrior-resource] <in [in this city] cities> <by consuming this unit>",
+		"Can only be built <when above [0] [Warrior-resource]>"
 		],
 		"attackSound": "nonmetalhit",
         "civilopediaText": [
@@ -170,10 +172,10 @@
     
 	{
 		"name": "Archer-package",//弓手包
-		"unitType": "Ranged",
+		"unitType": "Package",
 		"movement": 1,
 		"strength": 1,
-		"cost": 25,
+		"cost": 13,
 		//"requiredTech": "Technology7",
 		//"obsoleteTech": "Metal Casting",//过时科技
 		//"upgradesTo": "Swordsman",//升级目标
@@ -181,7 +183,7 @@
 		"[5] free [Archer] units appear <by consuming this unit>",
 		"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
 		"[-1] population [in this city] <before the [Bronze Age]>",
-		"Requires at least [2] population<before the [Bronze Age]>",
+		"Requires at least [2] population <before the [Bronze Age]>",
 		"Unbuildable <for [AI player] Civilizations>",
 		"[+1] population [in this city] <by consuming this unit>",
 		//"[This Unit] gains the [Overlook] promotion <upon ending a turn in a [Observation point] tile>",
@@ -193,10 +195,10 @@
 	},
 	{
 		"name": "Archer",//弓手
-		"unitType": "Ranged",
+		"unitType": "Archer",
 		"movement": 1,
 		"strength": 2,
-		"cost": 5,
+		"cost": 3,
 		//"requiredTech": "Technology7",
 		//"obsoleteTech": "Metal Casting",
 		//"upgradesTo": "Swordsman",
@@ -209,7 +211,7 @@
 		"Instantly gain [-1] [Recuperation]",
 		//"[This Unit] gains the [Overlook] promotion <upon ending a turn in a [Observation point] tile>",
         //"[This Unit] gains the [Overlook-Cancel] promotion <upon entering a [non-[Observation point]] tile>",
-		"Can carry [2] [Wooden Arrow] units",
+		"Can carry [5] [Wooden Arrow] units",
 		"Instantly provides [+1] [Archer-resource] <in [in this city] cities> <by consuming this unit>"
 		],
 		"attackSound": "nonmetalhit",
@@ -218,7 +220,7 @@
 	},
 	{
 		"name": "Archer1",//弓手
-		"unitType": "Sword",
+		"unitType": "Archer",
 		"movement": 1,
 		"strength": 2,
 		"cost": 0,
@@ -230,9 +232,11 @@
 		//"[This Unit] heals [5] HP<for [1] movement>"
 		"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
 		"Never appears as a Barbarian unit",
-		"Costs [1] [Archer-resource]",
+		//"Costs [1] [Archer-resource]",
 		"Can carry [5] [Wooden Arrow] units",
-		"Instantly provides [+1] [Archer-resource] <in [in this city] cities> <by consuming this unit>"
+		"Instantly consumes [+1] [Archer-resource]",
+		"Instantly provides [+1] [Archer-resource] <in [in this city] cities> <by consuming this unit>",
+		"Can only be built <when above [0] [Archer-resource]>"
 		],
 		"attackSound": "nonmetalhit",
         "civilopediaText": [
@@ -245,7 +249,7 @@
 		"strength": 1,
 		"rangedStrength": 1,
 		"range": 2,
-		"cost": 10,
+		"cost": 5,
 		//"requiredTech": "Technology7",
 		//"obsoleteTech": "Metal Casting",//过时科技
 		//"upgradesTo": "Swordsman",//升级目标
@@ -271,7 +275,7 @@
 		"strength": 1,
 		"rangedStrength": 1,
 		"range": 2,
-		"cost": 2,
+		"cost": 1,
 		//"requiredTech": "Technology7",
 		//"obsoleteTech": "Metal Casting",
 		//"upgradesTo": "Swordsman",
@@ -290,7 +294,165 @@
         "civilopediaText": [
 		]
 	},
-
+	{
+		"name": "Slinger-package",//投石手包
+		"unitType": "Package",
+		"movement": 1,
+		"strength": 1,
+		"cost": 13,
+		//"requiredTech": "Technology7",
+		//"obsoleteTech": "Metal Casting",//过时科技
+		//"upgradesTo": "Swordsman",//升级目标
+		"uniques" : [
+		"[5] free [Slinger] units appear <by consuming this unit>",
+		"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
+		"[-1] population [in this city] <before the [Bronze Age]>",
+		"Requires at least [2] population <before the [Bronze Age]>",
+		"Unbuildable <for [AI player] Civilizations>",
+		"[+1] population [in this city] <by consuming this unit>",
+		//"[This Unit] gains the [Overlook] promotion <upon ending a turn in a [Observation point] tile>",
+        //"[This Unit] gains the [Overlook-Cancel] promotion <upon entering a [non-[Observation point]] tile>"
+		],
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+		]
+	},
+	{
+		"name": "Slinger",//投石手
+		"unitType": "Archer",
+		"movement": 1,
+		"strength": 1,
+		"rangedStrength": 1,
+		"cost": 3,
+		//"requiredTech": "Technology7",
+		//"obsoleteTech": "Metal Casting",
+		//"upgradesTo": "Swordsman",
+		"uniques" : [
+		//"May upgrade to [Spearman] through ruins-like effects"
+		//"[This Unit] heals [5] HP<for [1] movement>"
+		//"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
+		"Can only be built <within [3] tiles of a [Camp]>",
+		"Never appears as a Barbarian unit",
+		"Instantly gain [-1] [Recuperation]",
+		//"[This Unit] gains the [Overlook] promotion <upon ending a turn in a [Observation point] tile>",
+        //"[This Unit] gains the [Overlook-Cancel] promotion <upon entering a [non-[Observation point]] tile>",
+		//"Can carry [2] [Wooden Arrow] units",
+		"Instantly provides [+1] [Slinger-resource] <in [in this city] cities> <by consuming this unit>"
+		],
+		"attackSound": "throw",
+        "civilopediaText": [
+		]
+	},
+	{
+		"name": "Slinger1",//投石手
+		"unitType": "Archer",
+		"movement": 1,
+		"strength": 1,
+		"rangedStrength": 1,
+		"cost": 0,
+		//"requiredTech": "Technology7",
+		//"obsoleteTech": "Metal Casting",
+		//"upgradesTo": "Swordsman",
+		"uniques" : [
+		//"May upgrade to [Spearman] through ruins-like effects"
+		//"[This Unit] heals [5] HP<for [1] movement>"
+		"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
+		"Never appears as a Barbarian unit",
+		//"Costs [1] [Archer-resource]",
+		//"Can carry [5] [Wooden Arrow] units",
+		"Instantly consumes [+1] [Slinger-resource]",
+		"Instantly provides [+1] [Slinger-resource] <in [in this city] cities> <by consuming this unit>",
+		"Can only be built <when above [0] [Slinger-resource]>"
+		],
+		"attackSound": "throw",
+        "civilopediaText": [
+		]
+	},
+     
+	{
+		"name": "Light riding-package",//轻骑兵包
+		"unitType": "Package",
+		"movement": 1,
+		"strength": 1,
+		"cost": 13,
+		//"requiredTech": "Technology7",
+		//"obsoleteTech": "Metal Casting",//过时科技
+		//"upgradesTo": "Swordsman",//升级目标
+		"uniques" : [
+		"[5] free [Light riding] units appear <by consuming this unit>",
+		"Instantly gain [-10] [Horses]",
+		"Can only be built <when above [9] [Horses]>",
+		"Can only be built <within [3] tiles of a [Pasture]> <for [Human player] Civilizations>",
+		"[-1] population [in this city] <before the [Bronze Age]>",
+		"Requires at least [2] population <before the [Bronze Age]>",
+		"Unbuildable <for [AI player] Civilizations>",
+		"[+1] population [in this city] <by consuming this unit>",
+		//"[This Unit] gains the [Overlook] promotion <upon ending a turn in a [Observation point] tile>",
+        //"[This Unit] gains the [Overlook-Cancel] promotion <upon entering a [non-[Observation point]] tile>"
+		],
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+		]
+	},
+	{
+		"name": "Light riding",//轻骑兵
+		"unitType": "Archer",
+		"movement": 1,
+		"strength": 2,
+		"cost": 3,
+		//"requiredTech": "Technology7",
+		//"obsoleteTech": "Metal Casting",
+		//"upgradesTo": "Swordsman",
+		"uniques" : [
+		//"May upgrade to [Spearman] through ruins-like effects"
+		//"[This Unit] heals [5] HP<for [1] movement>"
+		//"Can only be built <within [3] tiles of a [Camp]> <for [Human player] Civilizations>",
+		"[+1] Movement <in [{Featureless} {Plains}] tiles>",
+		"[+1] Movement <in [{Featureless} {Grassland}] tiles>",
+		"Can only be built <within [3] tiles of a [Pasture]>",
+		"Never appears as a Barbarian unit",
+		"Instantly gain [-1] [Recuperation]",
+		"Instantly gain [-2] [Horses]",
+		"Can only be built <when above [1] [Horses]>",
+		//"[This Unit] gains the [Overlook] promotion <upon ending a turn in a [Observation point] tile>",
+        //"[This Unit] gains the [Overlook-Cancel] promotion <upon entering a [non-[Observation point]] tile>",
+		//"Can carry [2] [Wooden Arrow] units",
+		"Can carry [3] [Wooden Arrow] units <after adopting [Light Cavalry Craftsmanship]>",
+		"Instantly provides [+1] [Light riding-resource] <in [in this city] cities> <by consuming this unit>"
+		],
+		"attackSound": "horse",
+        "civilopediaText": [
+		]
+	},
+	{
+		"name": "Light riding1",//轻骑兵
+		"unitType": "Archer",
+		"movement": 1,
+		"strength": 2,
+		"cost": 0,
+		//"requiredTech": "Technology7",
+		//"obsoleteTech": "Metal Casting",
+		//"upgradesTo": "Swordsman",
+		"uniques" : [
+		//"May upgrade to [Spearman] through ruins-like effects"
+		//"[This Unit] heals [5] HP<for [1] movement>"
+		"Can only be built <within [3] tiles of a [Pasture]> <for [Human player] Civilizations>",
+		"Never appears as a Barbarian unit",
+		//"Costs [1] [Archer-resource]",
+		//"Can carry [5] [Wooden Arrow] units",
+		"[+1] Movement <in [{Featureless} {Plains}] tiles>",
+		"[+1] Movement <in [{Featureless} {Grassland}] tiles>",
+		"Instantly gain [-2] [Horses]",
+		"Can only be built <when above [1] [Horses]>",
+		"Can carry [3] [Wooden Arrow] units <after adopting [Light Cavalry Craftsmanship]>",
+		"Instantly consumes [+1] [Light riding-resource]",
+		"Instantly provides [+1] [Light riding-resource] <in [in this city] cities> <by consuming this unit>",
+		"Can only be built <when above [0] [Light riding-resource]>"
+		],
+		"attackSound": "horse",
+        "civilopediaText": [
+		]
+	},
 
 
 	{
@@ -308,6 +470,7 @@
 		//"Provides [1] [Catgirl-resourc]"
 
      ],
+	 "attackSound": "click ",
 	},
     
 

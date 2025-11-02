@@ -566,7 +566,23 @@
 					],//独特属性
 	},
 	{
-		"name": "Archer-resource",//勇士资源
+		"name": "Archer-resource",//弓手资源
+		"resourceType": "Strategic",//资源类型
+		"uniques": [
+			//"City-level resource",
+			"Stockpiled"
+					],//独特属性
+	},
+	{
+		"name": "Slinger-resource",//投石手资源
+		"resourceType": "Strategic",//资源类型
+		"uniques": [
+			//"City-level resource",
+			"Stockpiled"
+					],//独特属性
+	},
+	{
+		"name": "Light riding-resource",//轻骑兵资源
 		"resourceType": "Strategic",//资源类型
 		"uniques": [
 			//"City-level resource",

@@ -55,7 +55,7 @@
 
     {
 		"name": "Clan Councils", //氏族议会
-		"cost": 30, //建造费用
+		"cost": 15, //建造费用
 		"uniques": [
 			//"Unsellable",
 			"Indicates the capital city",
@@ -168,7 +168,7 @@
 			"Can only be built <when above [4] [Recuperation]>",
 			"Instantly consumes [5] [Recuperation]",
 			"Remove [Discharge] [in this city]",
-			"Automatically built in all cities where it is buildable <for [AI player] Civilizations>"
+			//"Automatically built in all cities where it is buildable <for [AI player] Civilizations>"
 		]
 	},
 	{
@@ -180,7 +180,8 @@
 			"Instantly provides [5] [Recuperation]",
 			"Requires at least [2] population",
 			"Remove [Decycle] [in this city]",
-			"Automatically built in all cities where it is buildable <for [AI player] Civilizations>"
+			"Automatically built in all cities where it is buildable"
+			//"Automatically built in all cities where it is buildable <for [AI player] Civilizations>"
 		]
 	},
 	{
@@ -195,13 +196,35 @@
 		]
 	},
 	{
-		"name": "Archer-Conversion of population", //勇士-人口转换
+		"name": "Archer-Conversion of population", //弓手-人口转换
 		"cost": 0, //建造费用
 		"uniques": [
 			"Instantly provides [1] [Recuperation]",
 			"Can only be built <when above [0] [Archer-resource]>",
 			"Instantly consumes [1] [Archer-resource]",
 			"Remove [Archer-Conversion of population] [in this city]",
+			"Automatically built in all cities where it is buildable <when above [0] [Archer-resource]> <for [AI player] Civilizations>"
+		]
+	},
+	{
+		"name": "Slinger-Conversion of population", //投石手-人口转换
+		"cost": 0, //建造费用
+		"uniques": [
+			"Instantly provides [1] [Recuperation]",
+			"Can only be built <when above [0] [Slinger-resource]>",
+			"Instantly consumes [1] [Slinger-resource]",
+			"Remove [Slinger-Conversion of population] [in this city]",
+			"Automatically built in all cities where it is buildable <when above [0] [Archer-resource]> <for [AI player] Civilizations>"
+		]
+	},
+	{
+		"name": "Light riding-Conversion of population", //轻骑兵-人口转换
+		"cost": 0, //建造费用
+		"uniques": [
+			"Instantly provides [1] [Recuperation]",
+			"Can only be built <when above [0] [Light riding-resource]>",
+			"Instantly consumes [1] [Light riding-resource]",
+			"Remove [Light riding-Conversion of population] [in this city]",
 			"Automatically built in all cities where it is buildable <when above [0] [Archer-resource]> <for [AI player] Civilizations>"
 		]
 	},

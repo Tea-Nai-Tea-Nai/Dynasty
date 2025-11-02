@@ -134,6 +134,27 @@
                 "row": 2,// 行
                 "column": 9// 列
             },
+            
+             {
+                "name": "Light Cavalry Craftsmanship",//轻骑兵手艺
+                "uniques": [
+                 "Comment [Unlocks [Light cavalry loaded with [3] wooden arrows]]",
+                ],// 独特属性
+                "requires": ["Grazing"],//放牧
+                "row": 3,// 行
+                "column": 9// 列
+            }, 
+            {
+                "name": "Cancel Light Cavalry Craftsmanship",//取消轻骑兵手艺
+                "uniques": [
+                "Remove [Light Cavalry Craftsmanship] and refund [50]% of its cost",
+                "Remove [Cancel Light Cavalry Craftsmanship] and refund [100]% of its cost",
+                "Unavailable <for [AI player] Civilizations>"
+                ],// 
+                "requires": ["Light Cavalry Craftsmanship"],//轻骑兵手艺
+                "row": 4,// 行
+                "column": 9// 列
+            },
              {
                 "name": "Grazing",//放牧
                 "uniques": [
